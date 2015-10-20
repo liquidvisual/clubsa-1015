@@ -1,0 +1,45 @@
+/*
+    SOCIAL-MEDIA.CSS
+
+    - Last updated: 00.00.00
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Social Media
+//-----------------------------------------------------------------
+
+.social-media {
+	a {
+		display: inline-block;
+		width: rem-calc(48);
+		height: rem-calc(48);
+		line-height: rem-calc(48);
+		background: #E06337;
+		color: white;
+		text-align: center;
+		font-size: rem-calc(25);
+
+		&:hover {
+			@include media-breakpoint-up(xl) {
+			    background: lighten(#E06337, 10%);
+			}
+		}
+	}
+
+	.twitter {
+		background: $tertiary-color;
+
+		&:hover {
+			@include media-breakpoint-up(xl) {
+			    background: lighten($tertiary-color, 10%);
+			}
+		}
+	}
+}
+
+//=========================================
+// Contexts
+//=========================================

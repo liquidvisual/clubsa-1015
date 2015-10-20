@@ -1,0 +1,120 @@
+/*
+    THEMES.CSS
+
+    - Last updated: 00.00.00
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Themes
+//-----------------------------------------------------------------
+
+.global-navigation .theme-1 {
+	.top-parent-anchor {
+		background: $secondary-color;
+
+		&:hover {
+			background: lighten($secondary-color, 10%);
+		}
+	}
+
+	.dropdown {
+		background: $secondary-color;
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.global-navigation .theme-2 {
+	.top-parent-anchor {
+		background: $tertiary-color;
+
+		&:hover {
+			background: lighten($tertiary-color, 10%);
+		}
+	}
+
+	.dropdown {
+		background: $tertiary-color;
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.global-navigation .theme-3 {
+	.top-parent-anchor {
+		background: $quaternary-color;
+
+		&:hover {
+			background: lighten($quaternary-color, 10%);
+		}
+	}
+
+	.dropdown {
+		background: $quaternary-color;
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.global-navigation .theme-4 {
+	.top-parent-anchor {
+		background: $quinary-color;
+
+		&:hover {
+			background: lighten($quinary-color, 10%);
+		}
+	}
+
+	.dropdown {
+		background: $quinary-color;
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.global-navigation .theme-5 {
+	.top-parent-anchor {
+		background: $senary-color;
+
+		&:hover {
+			background: lighten($senary-color, 10%);
+		}
+	}
+
+	.dropdown {
+		background: $senary-color;
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.global-navigation .theme-6 {
+	.top-parent-anchor {
+		background: $septenary-color;
+
+		&:hover {
+			background: lighten($septenary-color, 10%);
+		}
+	}
+
+	.dropdown {
+		background: $septenary-color;
+	}
+}
+
+//=========================================
+//
+//=========================================

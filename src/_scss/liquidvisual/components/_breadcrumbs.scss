@@ -1,0 +1,66 @@
+/*
+	BREADCRUMBS.CSS
+
+	- updated: 11.10.15
+	- liquidvisual.com
+
+	- Notes -
+
+	- A better responsive alternative to Foundation's breadcrumbs.
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Breadcrumbs
+//-----------------------------------------------------------------
+
+.lv-breadcrumbs {
+	margin: 0;
+	padding: rem-calc(6 0);
+	border: 0;
+	font-size: 0.8em;
+	font-weight: 400;
+	list-style: none;
+	text-transform: capitalize;
+
+	//=========================================
+	// List
+	//=========================================
+
+	li {
+		display: inline-block;
+		line-height: 1;
+		color: #888;
+
+		&:after {
+			display: inline-block;
+			content: "\f105";
+			// content: "\203A";
+			font-family: "FontAwesome";
+			margin: rem-calc(0 8);
+			font-weight: bold;
+			color: #555;
+		}
+
+		&:last-child:after {
+			content: "";
+		}
+	}
+
+	//=========================================
+	// Anchors - opinionated truncation
+	//=========================================
+
+	a {
+		display: inline-block;
+
+		@media (max-width: 30em) {
+			max-width: rem-calc(100);
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			display: inline-block;
+		}
+	}
+}

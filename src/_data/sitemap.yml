@@ -1,0 +1,114 @@
+- title: Home
+  url: /
+  theme: theme-1
+
+- title: About
+  url: /about/
+  theme: theme-2
+  include_children_in_nav: true
+  children:
+    - title: Staff and Board
+      url: "#"
+    - title: Publications and Submissions
+      url: "#"
+    - title: Club Safe
+      url: "#"
+    - title: Training
+      url: "#"
+    - title: Funding
+      url: "#"
+      include_children_in_nav: true
+      children:
+        - title: Clubs SA/IGC Sponsorship Assistance Program
+          url: "#"
+        - title: Club One Small Grants
+          url: "#"
+        - title: Kokoda Youth Challenge 2014
+          url: "#"
+        - title: Recipients
+          url: "#"
+    - title: Find A Club
+      url: "#"
+    - title: Contact Us
+      url: "#"
+
+- title: Membership
+  url: "#"
+  theme: theme-3
+  include_children_in_nav: true
+  children:
+    - title: Why Join
+      url: "#"
+    - title: Application/Enquiry Form
+      url: "#"
+    - title: Industry Links
+      url: "#"
+    - title: Directors Manual for Licensed Clubs
+      url: "#"
+    - title: Members
+      include_children_in_nav: false
+      children:
+        - title: WHS Induction
+          url: "#"
+        - title: Uploaded documents
+          url: "#"
+        - title: Handbook
+          url: "#"
+        - title: Newsletters
+          url: "#"
+
+- title: Partners
+  url: "#"
+  theme: theme-4
+  include_children_in_nav: true
+  children:
+    - title: Why become a Partner
+      url: "#"
+    - title: Various Levels of Partnerships
+      url: "#"
+    - title: Partnership Brochure
+      url: "#"
+    - title: Current Partners
+      url: "#"
+    - title: Featured Partner
+      url: "#"
+    - title: Services/Benefits Directory
+      url: "#"
+    - title: Advertise with Clubs SA (media kit)
+      url: "#"
+    - title: Enquiry Form
+      url: "#"
+
+- title: News
+  url: "#"
+  theme: theme-5
+  include_children_in_nav: true
+  children:
+    - title: News List
+      url: "#"
+    - title: News Item
+      url: "#"
+
+- title: Events
+  url: "#"
+  theme: theme-6
+  include_children_in_nav: true
+  children:
+    - title: Awards of Excellence current year
+      url: "#"
+    - title: Club Managers Meeting
+      url: "#"
+      include_children_in_nav: true
+      children:
+        - title: Awards of Excellence current year
+          url: "#"
+    - title: Clubs SA Charity Bowls Day
+      url: "#"
+    - title: Regional Meetings
+      url: "#"
+    - title: AGM
+      url: "#"
+    - title: Clubs SA Sponsors Drinks
+      url: "#"
+    - title: Awards of Excellence last year
+      url: "#"

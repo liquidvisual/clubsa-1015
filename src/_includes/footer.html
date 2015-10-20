@@ -1,0 +1,32 @@
+{% assign settings = site.data.settings %}
+
+<!-- Footer Body -->
+<section class="global-footer-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                {% include contact_info.html %}
+
+            </div>
+            <div class="col-md-6 text-right">
+                <!-- { % include snippets/facebook_widget.html %} -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Legal -->
+<section class="global-footer-bottom">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-xs-12 text-right">
+				<a class="pull-left" href="/sitemap/">Sitemap</a>
+			    <a class="author-logo" target="_blank" href="{{ settings.author.url }}">
+			        <span class="text">{{ settings.author.description }}</span>
+                    <img width="20" src="{{ settings.author.logo }}" alt="Created by {{ settings.author.title }}">
+			    </a>
+    		</div>
+    	</div>
+    </div>
+</section>
