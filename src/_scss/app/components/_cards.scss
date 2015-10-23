@@ -1,0 +1,232 @@
+/*
+    CARDS.CSS
+
+    - Last updated: 00.00.00
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Cards
+//-----------------------------------------------------------------
+
+// Bootstrap will replace this later
+.card img {
+	border-radius: 0 !important;
+}
+
+.card-link {
+	p {
+		color: $body-color;
+	}
+
+	.card-title {
+		@include transition();
+	}
+
+	&:hover .card-title {
+		@include media-breakpoint-up(xl) {
+		    color: lighten($headings-color, 20%);
+		}
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.news-cards {
+	padding: 0;
+	overflow: hidden;
+}
+
+//-----------------------------------------------------------------
+// Card Extensions
+//-----------------------------------------------------------------
+
+.card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    .card-block {
+    	overflow: hidden;
+
+    	@include media-breakpoint-up(md) {
+    		min-height: rem-calc(110);
+    	}
+    	@include media-breakpoint-up(lg) {
+    		// min-height: rem-calc(250);
+    	}
+    }
+
+    .card-text {
+    	min-height: rem-calc(90);
+    }
+
+    .btn {
+		position: absolute;
+		bottom: rem-calc(10);
+		right: rem-calc(10);
+    }
+}
+
+//-----------------------------------------------------------------
+// Bio Card
+//-----------------------------------------------------------------
+
+.bio-card {
+	@include media-breakpoint-up(lg) {
+	    padding: rem-calc(10);
+	}
+}
+
+//-----------------------------------------------------------------
+// Cards Collapse on SM only
+//-----------------------------------------------------------------
+
+.cards-collapse-xs {
+	@include media-breakpoint-down(sm) {
+
+		li {
+			padding: 0;
+		}
+
+		.card {
+			display: table;
+			margin: rem-calc(-1px -10);
+			padding: rem-calc(30 25);
+			border-width: 1px;
+			border-left: 0;
+			border-right: 0;
+			border-bottom: 0;
+
+			.btn {
+				width: 100%;
+				position: static; // override
+			}
+		}
+
+		.card-head,
+		.card-block {
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		.card-head {
+			width: rem-calc(110);
+		}
+
+		.card-block {
+			padding: rem-calc(0 20);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Card Slim
+//-----------------------------------------------------------------
+
+.card-slim {
+	overflow: visible;
+
+	.media {
+		min-height: rem-calc(125);
+
+		@include media-breakpoint-up(md) {
+		    min-height: rem-calc(100);
+		}
+	}
+
+	.media-body {
+		padding: rem-calc(15 8);
+	}
+
+	img {
+		width: rem-calc(110);
+
+		@include media-breakpoint-up(xl) {
+		    width: rem-calc(154);
+		}
+	}
+
+	.btn {
+		position: absolute;
+		bottom: rem-calc(10);
+		right: rem-calc(10);
+
+	}
+}
+
+//-----------------------------------------------------------------
+// Colors
+//-----------------------------------------------------------------
+
+.color-card {
+	border: 0;
+
+	@include media-breakpoint-down(sm) {
+		margin: rem-calc(0 -25);
+		padding: rem-calc(5 5 10 5);
+	}
+
+	.card-block {
+		min-height: 0;
+	}
+
+	.card-text {
+		min-height: 0;
+	}
+
+	input {
+		background: rgba(white, 0.8);
+	}
+
+	.btn {
+		border: 0;
+		color: white;
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.card-quaternary {
+	background: $quaternary-color;
+
+	input {
+		border-color: darken($quaternary-color, 14%);
+	}
+
+	.btn {
+		background: darken($quaternary-color, 8%);
+	}
+}
+//=========================================
+
+.card-tertiary {
+	background: $tertiary-color;
+
+	input {
+		border-color: darken($tertiary-color, 14%);
+	}
+
+	.btn {
+		background: darken($tertiary-color, 8%);
+	}
+}
+//=========================================
+
+.card-senary {
+	background: $senary-color;
+
+	input {
+		border-color: darken($senary-color, 14%);
+	}
+
+	.btn {
+		background: darken($senary-color, 8%);
+	}
+}

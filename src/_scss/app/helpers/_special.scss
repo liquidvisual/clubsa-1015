@@ -15,6 +15,34 @@
     color: $primary-color;
 }
 
+
+
 //=========================================
-//
+// Partners
 //=========================================
+
+.partners .secondary ul {
+
+	li {
+		// SMALL ONLY
+		@include media-breakpoint-down(md) {
+			padding: 5px;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+	    padding-top: rem-calc(30);
+	}
+
+	@include media-breakpoint-up(xl) {
+	    padding-top: rem-calc(35);
+	}
+}
+
+// .partners .secondary {
+// 	// SMALL ONLY
+// 	@include media-breakpoint-down(md) {
+// 	    padding-left: 0;
+// 	    padding-right: 0;
+// 	}
+// }

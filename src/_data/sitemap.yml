@@ -33,7 +33,7 @@
       url: "#"
 
 - title: Membership
-  url: "#"
+  url: "/membership/"
   theme: theme-3
   include_children_in_nav: true
   children:
@@ -58,7 +58,7 @@
           url: "#"
 
 - title: Partners
-  url: "#"
+  url: "/partners/"
   theme: theme-4
   include_children_in_nav: true
   children:
@@ -80,7 +80,7 @@
       url: "#"
 
 - title: News
-  url: "#"
+  url: "/news/"
   theme: theme-5
   include_children_in_nav: true
   children:
@@ -90,7 +90,7 @@
       url: "#"
 
 - title: Events
-  url: "#"
+  url: "/events/"
   theme: theme-6
   include_children_in_nav: true
   children:

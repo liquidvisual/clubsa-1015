@@ -1,25 +1,12 @@
 /*
     GLOBAL.CSS
 
-    - Last updated: 20.10.15
+    - Last updated: 22.10.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
-//-----------------------------------------------------------------
-//
-//-----------------------------------------------------------------
-
-body {
-    // height: auto;
-}
-
-.lv-super,
-.lv-page {
-    // height: 100%;
-}
-
 //-----------------------------------------------------------------
 // Page
 //-----------------------------------------------------------------
@@ -66,12 +53,10 @@ html {
 // Font Smoothing
 //-----------------------------------------------------------------
 
-// @if $font-smoothing == "antialiased" {
-//     body {
-//          -webkit-font-smoothing: antialiased;
-//         -moz-osx-font-smoothing: grayscale;
-//                  font-smoothing: antialised;
-//     }
+// body {
+//      -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//              font-smoothing: antialised;
 // }
 
 //-----------------------------------------------------------------

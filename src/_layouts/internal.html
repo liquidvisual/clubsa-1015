@@ -2,34 +2,20 @@
 layout: master
 ---
 
-{% assign hero = page.hero_image %}
-
-<!-- HERO -->
-<div class="lv-hero">
-    <div class="lv-hero-item" style="background-image: url('{{ hero | prepend: site.assets }}')" data-background-image="{{ hero | prepend: site.assets }}">
-        <div class="row outer-row">
-            <div class="columns">
-                <div class="lv-hero-item-caption animated fadeInLeft">
-                    {% if page.hero_override %}
-                        <h2 class="h1">{{ hero.title }}</h2>
-                    {% else %}
-                        <h1>{{ hero.title }}</h1>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
+<!-- BREADCRUMBS -->
+<nav class="breadcrumbs {% unless page.breadcrumbs %} invisible {% endunless %}">
+    <div class="container">
+        {% include snippets/breadcrumb.html %}
     </div>
-</div> <!-- .lv-hero -->
+</nav>
 
-{% if page.breadcrumbs %}
-    <!-- BREADCRUMBS -->
-    <nav class="breadcrumbs-bar">
-        <div class="row outer-row">
-            <div class="columns">
-                {% include snippets/breadcrumbs.html %}
-            </div>
-        </div>
-    </nav>
-{% endif %}
+<!-- CONTENT -->
+<section class="stage m-b-lg">
 
-{{ content }}
+	<header class="stage-header container">
+		<h1>{{ page.title }}</h1>
+	</header>
+
+    {{ content }}
+
+</section>

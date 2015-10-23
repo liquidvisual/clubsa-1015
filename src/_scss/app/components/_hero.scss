@@ -29,6 +29,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		font-size: rem-calc(23);
+		color: white;
 	}
 
 	p {
@@ -42,6 +43,10 @@
 		right: rem-calc(5);
 		color: rgba(white, 0.5);
 		font-size: rem-calc(50);
+
+		&:after {
+			display: none; // override btn
+		}
 	}
 }
 

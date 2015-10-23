@@ -20,14 +20,23 @@
 		}
 	}
 
+	.dropdown a:hover {
+		background: darken($secondary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
 	.dropdown {
-		background: $secondary-color;
+		background: lighten($secondary-color, 10%);
 	}
 }
 
 //=========================================
 //
 //=========================================
+
+.theme-2 .global-navigation {
+	border-color: $tertiary-color;
+}
 
 .global-navigation .theme-2 {
 	.top-parent-anchor {
@@ -38,8 +47,13 @@
 		}
 	}
 
+	.dropdown a:hover {
+		background: darken($tertiary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
 	.dropdown {
-		background: $tertiary-color;
+		background: lighten($tertiary-color, 10%);
 	}
 }
 
@@ -56,8 +70,13 @@
 		}
 	}
 
+	.dropdown a:hover {
+		background: darken($quaternary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
 	.dropdown {
-		background: $quaternary-color;
+		background: lighten($quaternary-color, 10%);
 	}
 }
 
@@ -74,8 +93,13 @@
 		}
 	}
 
+	.dropdown a:hover {
+		background: darken($quinary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
 	.dropdown {
-		background: $quinary-color;
+		background: lighten($quinary-color, 10%);
 	}
 }
 
@@ -92,14 +116,23 @@
 		}
 	}
 
+	.dropdown a:hover {
+		background: darken($senary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
 	.dropdown {
-		background: $senary-color;
+		background: lighten($senary-color, 10%);
 	}
 }
 
 //=========================================
 //
 //=========================================
+
+.theme-6 .global-navigation {
+	border-color: $septenary-color;
+}
 
 .global-navigation .theme-6 {
 	.top-parent-anchor {
@@ -110,8 +143,13 @@
 		}
 	}
 
+	.dropdown a:hover {
+		background: darken($septenary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
 	.dropdown {
-		background: $septenary-color;
+		background: lighten($septenary-color, 10%);
 	}
 }
 
