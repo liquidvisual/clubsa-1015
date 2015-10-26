@@ -1,0 +1,58 @@
+---
+layout: internal
+---
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+
+			<div class="m-b-md">
+				{{ content }}
+			</div>
+
+			<!-- FIND A CLUB -->
+			<div class="m-b-lg card color-card card-inverse card-senary">
+				<div class="card-block clearfix">
+					<h3 class="card-title"><i class="fa fa-search"></i>&nbsp; Suburb, Postcode or Club Name</h3>
+					<form>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="">
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-primary"><i class="fa fa-angle-right"></i></button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<p>Your search results...</p>
+
+			<div class="table-responsive">
+				<table class="table club-table" style="min-width: 620px;">
+					<thead>
+						<tr>
+							<th>Club Name</th>
+							<th>Phone</th>
+							<th>Address</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for i in (1..6) %}
+							<tr>
+								<td>Name of club here</td>
+								<td>8100 124354</td>
+								<td>12 Street, Suburb Here, 5040 lorem</td>
+								<td><a href="#">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+		<div class="col-md-6 pad-left-xl">
+			<img width="100%" src="http://placehold.it/600x380">
+		</div>
+	</div>
+</div>

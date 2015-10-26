@@ -7,26 +7,16 @@ layout: master
 
 {% include hero.html %}
 
-<div class="spacer m-b-lg"></div>
+<div class="hero-spacer"></div>
 
 <div class="container m-b-md">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-8 pad-right-xl">
 
 			<ul class="cards-collapse-xs block-grid-xs-1 block-grid-md-2 block-grid-xl-3">
 				{% for item in articles | limit: 6 %}
 					<li class="col-md-4 col-lg-4">
-						<div class="card">
-							<div class="card-head">
-								<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="...">
-								<a href="#" class="pull-right btn btn-primary btn-text">Read More <i class="fa fa-angle-right"></i></a>
-							</div>
-							<div class="card-block">
-								<h3 class="card-title">{{ item.title }}</h3>
-								<p><date class="text-capitalize m-b">07 NOVEMBER 2015</date></p>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
+						{% include components/card.html %}
 					</li>
 				{% endfor %}
 			</ul>
@@ -49,61 +39,11 @@ layout: master
 						</div>
 					</div>
 				</div>
-				<br>
 			{% endfor %}
 
-			<!-- <div class="spacer m-b"></div> -->
+			<div class="spacer m-b-lg"></div>
 
-
-			<!-- FIND A CLUB -->
-			<div class="card color-card card-inverse card-quaternary">
-				<div class="card-block clearfix">
-					<h3 class="card-title"><i class="fa fa-search"></i>&nbsp; Find a club</h3>
-
-					<form>
-						<div class="row">
-							<div class="col-xs-10 p-r-0">
-								<input type="text" class="form-control" placeholder=".col-xs-2">
-							</div>
-							<div class="col-xs-2 p-l-0">
-								<button type="submit" class="btn btn-primary"><i class="fa fa-angle-right"></i></button>
-							</div>
-						</div>
-					</form>
-
-				</div>
-			</div>
-
-			<!--  ONLINE PAYMENTS -->
-			<div class="card color-card card-inverse card-tertiary">
-				<div class="card-block clearfix">
-					<h3 class="card-title"><i class="fa fa-credit-card"></i>&nbsp; Online Payments</h3>
-					<p class="card-text">You can make payments to Clubs SA using our online payment system.</p>
-					<a href="#" class="btn btn-primary"><i class="fa fa-angle-right"></i></a>
-				</div>
-			</div>
-
-			<!-- MEMBER LOGIN -->
-			<div class="card color-card card-inverse card-senary">
-				<div class="card-block clearfix">
-					<h3 class="card-title"><i class="fa fa-users"></i>&nbsp; Member log in</h3>
-
-					<form class="form-inline">
-						<div class="form-group">
-							<label>
-								<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-							</label>
-						</div>
-						<div class="form-group">
-							<label>
-								<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-							</label>
-						</div>
-						<button type="submit" class="btn btn-primary"><i class="fa fa-angle-right"></i></button>
-					</form>
-
-				</div>
-			</div>
+			{% include components/color_cards.html %}
 
 		</div>
 	</div>

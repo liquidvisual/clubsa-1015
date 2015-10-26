@@ -2,36 +2,33 @@
 layout: internal
 ---
 
-{% assign settings = site.data.settings %}
-{% assign articles = site.data.articles %}
+{% assign sections = site.data.sitemap[5].children %}
+{% assign events = site.data.events %}
 
 <div class="container">
 	<div class="row">
 		<div class="col-md-7">
 
-			{{ content }}
+			<div class="m-b-lg">
+				{{ content }}
+			</div>
 
-			<ul class="cards-collapse-xs block-grid-xs-1 block-grid-md-2 block-grid-xl-3">
-				{% for item in articles | limit: 6 %}
+			<ul class="block-grid-xs-1 block-grid-md-2 block-grid-xl-3">
+				{% for item in sections | limit: 6 %}
 					<li class="col-md-4 col-lg-4">
-						<div class="card">
-							<div class="card-head">
-								<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="...">
-								<a href="#" class="pull-right btn btn-primary"><i class="fa fa-angle-right"></i></a>
-							</div>
-							<div class="card-block">
-								<h3 class="card-title">{{ item.title }}</h3>
-								<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-							</div>
-						</div>
+						{% include components/card_minimal.html %}
 					</li>
 				{% endfor %}
 			</ul>
 
 		</div>
-		<div class="col-md-5">
-			<h2><i class="fa fa-calendar"></i> Upcoming Events</h2>
-			<img width="100%" src="http://placehold.it/600x380">
+		<div class="col-md-5 pad-left-xl">
+			<h2 class="m-b-md"><i class="fa fa-calendar"></i> Upcoming Events</h2>
+
+			{% for item in events %}
+				{% include components/card_slim.html %}
+			{% endfor %}
+
 		</div>
 	</div>
 </div>

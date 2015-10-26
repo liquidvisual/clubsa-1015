@@ -1,7 +1,7 @@
 /*
     CARDS.CSS
 
-    - Last updated: 00.00.00
+    - Last updated: 23.10.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -11,10 +11,13 @@
 // Cards
 //-----------------------------------------------------------------
 
-// Bootstrap will replace this later
 .card img {
-	border-radius: 0 !important;
+	border-radius: 0 !important; // Bootstrap will replace this later
 }
+
+//-----------------------------------------------------------------
+// When wrapping card in anchor
+//-----------------------------------------------------------------
 
 .card-link {
 	p {
@@ -32,15 +35,6 @@
 	}
 }
 
-//=========================================
-//
-//=========================================
-
-.news-cards {
-	padding: 0;
-	overflow: hidden;
-}
-
 //-----------------------------------------------------------------
 // Card Extensions
 //-----------------------------------------------------------------
@@ -54,7 +48,7 @@
     	overflow: hidden;
 
     	@include media-breakpoint-up(md) {
-    		min-height: rem-calc(110);
+    		// min-height: rem-calc(110);
     	}
     	@include media-breakpoint-up(lg) {
     		// min-height: rem-calc(250);
@@ -73,10 +67,21 @@
 }
 
 //-----------------------------------------------------------------
+// Card Minimal
+//-----------------------------------------------------------------
+
+.card-minimal .card-title,
+.card-minimal .card-text,
+.card-slim .card-title {
+	padding-right: rem-calc(30);
+	min-height: 0;
+}
+
+//-----------------------------------------------------------------
 // Bio Card
 //-----------------------------------------------------------------
 
-.bio-card {
+.card-bio {
 	@include media-breakpoint-up(lg) {
 	    padding: rem-calc(10);
 	}
@@ -91,6 +96,10 @@
 
 		li {
 			padding: 0;
+		}
+
+		li:first-child .card {
+			border-top: 0;
 		}
 
 		.card {
@@ -121,6 +130,10 @@
 		.card-block {
 			padding: rem-calc(0 20);
 		}
+
+		.card-text {
+			min-height: 0;
+		}
 	}
 }
 
@@ -130,6 +143,11 @@
 
 .card-slim {
 	overflow: visible;
+	margin-bottom: rem-calc(20);
+
+	@include media-breakpoint-up(xl) {
+	    margin-bottom: rem-calc(40);
+	}
 
 	.media {
 		min-height: rem-calc(125);
@@ -137,6 +155,11 @@
 		@include media-breakpoint-up(md) {
 		    min-height: rem-calc(100);
 		}
+	}
+
+	date {
+		display: inline-block;
+		margin-bottom: rem-calc(5);
 	}
 
 	.media-body {
@@ -160,11 +183,27 @@
 }
 
 //-----------------------------------------------------------------
+// Card List Item
+//-----------------------------------------------------------------
+
+.card-list-item {
+	padding: rem-calc(25 0);
+	border-left: 0;
+	border-right: 0;
+	margin: -1px 0 0 0;
+
+	.media-body {
+		padding-top: 0;
+	}
+}
+
+//-----------------------------------------------------------------
 // Colors
 //-----------------------------------------------------------------
 
 .color-card {
 	border: 0;
+	margin-bottom: rem-calc(20);
 
 	@include media-breakpoint-down(sm) {
 		margin: rem-calc(0 -25);
@@ -179,13 +218,32 @@
 		min-height: 0;
 	}
 
+	.text {
+		padding-right: rem-calc(20);
+	}
+
 	input {
 		background: rgba(white, 0.8);
 	}
 
 	.btn {
+		position: static;
 		border: 0;
 		color: white;
+	}
+
+	.input-group-btn {
+		padding-left: rem-calc(10);
+	}
+}
+
+//=========================================
+// Membership Login
+//=========================================
+
+.card-senary .col-xl-6:first-of-type {
+	@include media-breakpoint-up(xl) {
+	    padding-right: 0;
 	}
 }
 
@@ -201,7 +259,7 @@
 	}
 
 	.btn {
-		background: darken($quaternary-color, 8%);
+		background: darken($quaternary-color, 10%);
 	}
 }
 //=========================================
@@ -214,7 +272,7 @@
 	}
 
 	.btn {
-		background: darken($tertiary-color, 8%);
+		background: darken($tertiary-color, 10%);
 	}
 }
 //=========================================
@@ -227,6 +285,6 @@
 	}
 
 	.btn {
-		background: darken($senary-color, 8%);
+		background: darken($senary-color, 10%);
 	}
 }

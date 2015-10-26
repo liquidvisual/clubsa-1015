@@ -7,8 +7,10 @@
   theme: theme-2
   include_children_in_nav: true
   children:
-    - title: Staff and Board
-      url: "#"
+    - title: About Clubs SA
+      url: "/about/about-clubs-sa/"
+    - title: Clubs SA Staff & Board
+      url: "/about/clubs-sa-staff-and-board/"
     - title: Publications and Submissions
       url: "#"
     - title: Club Safe
@@ -16,7 +18,7 @@
     - title: Training
       url: "#"
     - title: Funding
-      url: "#"
+      url: "/about/funding/"
       include_children_in_nav: true
       children:
         - title: Clubs SA/IGC Sponsorship Assistance Program
@@ -28,7 +30,7 @@
         - title: Recipients
           url: "#"
     - title: Find A Club
-      url: "#"
+      url: "/about/find-a-club/"
     - title: Contact Us
       url: "#"
 
@@ -46,6 +48,7 @@
     - title: Directors Manual for Licensed Clubs
       url: "#"
     - title: Members
+      url: /membership/members/
       include_children_in_nav: false
       children:
         - title: WHS Induction
@@ -95,20 +98,20 @@
   include_children_in_nav: true
   children:
     - title: Awards of Excellence current year
-      url: "#"
+      url: "/events/events-item/"
     - title: Club Managers Meeting
-      url: "#"
+      url: "/events/events-item/"
       include_children_in_nav: true
       children:
         - title: Awards of Excellence current year
-          url: "#"
+          url: "/events/events-item/"
     - title: Clubs SA Charity Bowls Day
-      url: "#"
+      url: "/events/events-item/"
     - title: Regional Meetings
-      url: "#"
+      url: "/events/events-item/"
     - title: AGM
-      url: "#"
+      url: "/events/events-item/"
     - title: Clubs SA Sponsors Drinks
-      url: "#"
+      url: "/events/events-item/"
     - title: Awards of Excellence last year
-      url: "#"
+      url: "/events/events-item/"

@@ -1,11 +1,12 @@
 <div class="card">
-    <div class="card-head">
-        <img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="...">
-        <a href="#" class="pull-right btn btn-primary btn-text">Read More <i class="fa fa-angle-right"></i></a>
-    </div>
-    <div class="card-block">
-        <h3 class="card-title">{{ item.title }}</h3>
-        <p><date class="text-capitalize m-b">07 NOVEMBER 2015</date></p>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
+	<div class="card-head">
+		<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="{{ item.title }}">
+		<a href="{{ item.url }}" class="pull-right btn btn-primary btn-text">Read More <i class="fa fa-angle-right"></i></a>
+	</div>
+	<div class="card-block" data-match-height>
+		<h3 class="card-title">{{ item.title }}</h3>
+		<p><date class="text-capitalize">{{ item.date }}</date></p>
+		<!-- TRUNCATE: 120 max chars -->
+		<p class="card-text">{{ item.body | truncate: 120 }}</p>
+	</div>
 </div>

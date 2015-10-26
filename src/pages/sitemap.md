@@ -9,33 +9,33 @@ permalink: /sitemap/
 <h2>All Available Pages for {{ site.data.settings.title }}</h2>
 
 <ul class="triangle-list check-list">
-	{% for item in site.pages %}
+	{% for item in site.pages | offset: 1 %}
 		<li><a href="{{ item.url }}">{{ item.layout }}</a> <small>({{ item.title }})</small></li>
 	{% endfor %}
 </ul>
 
 <h2>Breakpoints (pxs)</h2>
 
-<table style="width: 300px;">
+<table class="table" style="width: 300px;">
 	<tr>
-		<td>Small</td>
-		<td>{{ breakpoints.small }}</td>
+		<td>xs</td>
+		<td>{{ breakpoints.xs }}</td>
 	</tr>
 	<tr>
-		<td>Medium</td>
-		<td>{{ breakpoints.medium }}</td>
+		<td>sm</td>
+		<td>{{ breakpoints.sm }}</td>
 	</tr>
 	<tr>
-		<td>Large</td>
-		<td>{{ breakpoints.large }}</td>
+		<td>md</td>
+		<td>{{ breakpoints.md }}</td>
 	</tr>
 	<tr>
-		<td>xLarge</td>
-		<td>{{ breakpoints.xlarge }}</td>
+		<td>lg</td>
+		<td>{{ breakpoints.lg }}</td>
 	</tr>
 	<tr>
-		<td>xxLarge</td>
-		<td>{{ breakpoints.xxlarge }}</td>
+		<td>xl</td>
+		<td>{{ breakpoints.xl }}</td>
 	</tr>
 </table>
 

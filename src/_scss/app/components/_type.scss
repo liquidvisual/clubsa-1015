@@ -11,7 +11,7 @@
 // Type
 //-----------------------------------------------------------------
 
-a {
+a, .btn {
 	@include transition();
 }
 
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.3;
 }
 
-.stage h1 {
+.stage-header {
 	border-bottom: 1px solid #DEDEDE;
 	margin-bottom: rem-calc(40);
 	padding-bottom: rem-calc(30);
