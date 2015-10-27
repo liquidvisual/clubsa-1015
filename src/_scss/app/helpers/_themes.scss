@@ -38,6 +38,10 @@
 	border-color: $tertiary-color;
 }
 
+.theme-2 .btn-primary {
+	background: $tertiary-color;
+}
+
 .global-navigation .theme-2 {
 	.top-parent-anchor {
 		background: $tertiary-color;
@@ -63,6 +67,10 @@
 
 .theme-3 .global-navigation {
 	border-color: $quaternary-color;
+}
+
+.theme-3 .btn-primary {
+	background: $quaternary-color;
 }
 
 .global-navigation .theme-3 {
@@ -92,6 +100,10 @@
 	border-color: $quinary-color;
 }
 
+.theme-4 .btn-primary {
+	background: $quinary-color;
+}
+
 .global-navigation .theme-4 {
 	.top-parent-anchor {
 		background: $quinary-color;
@@ -119,6 +131,10 @@
 	border-color: $senary-color;
 }
 
+.theme-5 .btn-primary {
+	background: $senary-color;
+}
+
 .global-navigation .theme-5 {
 	.top-parent-anchor {
 		background: $senary-color;
@@ -144,6 +160,10 @@
 
 .theme-6 .global-navigation {
 	border-color: $septenary-color;
+}
+
+.theme-6 .btn-primary {
+	background: $septenary-color;
 }
 
 .global-navigation .theme-6 {

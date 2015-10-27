@@ -255,11 +255,15 @@
 	background: $quaternary-color;
 
 	input {
-		border-color: darken($quaternary-color, 14%);
+		border-color: darken($quaternary-color, 14%) !important;
 	}
 
 	.btn {
-		background: darken($quaternary-color, 10%);
+		background: darken($quaternary-color, 10%) !important;
+
+		&:hover {
+			background: darken($quaternary-color, 15%) !important;
+		}
 	}
 }
 //=========================================
@@ -268,11 +272,15 @@
 	background: $tertiary-color;
 
 	input {
-		border-color: darken($tertiary-color, 14%);
+		border-color: darken($tertiary-color, 14%) !important;
 	}
 
 	.btn {
-		background: darken($tertiary-color, 10%);
+		background: darken($tertiary-color, 10%) !important;
+
+		&:hover {
+			background: darken($tertiary-color, 15%) !important;
+		}
 	}
 }
 //=========================================
@@ -281,10 +289,14 @@
 	background: $senary-color;
 
 	input {
-		border-color: darken($senary-color, 14%);
+		border-color: darken($senary-color, 14%) !important;
 	}
 
 	.btn {
-		background: darken($senary-color, 10%);
+		background: darken($senary-color, 10%) !important;
+
+		&:hover {
+			background: darken($senary-color, 15%) !important;
+		}
 	}
 }

@@ -4,6 +4,7 @@ layout: internal
 
 {% assign settings = site.data.settings %}
 {% assign articles = site.data.articles %}
+{% assign events = site.data.events %}
 
 <div class="container" style="max-width: 500px;">
 
@@ -42,7 +43,7 @@ layout: internal
 
 	<h2 class="clearfix m-y-lg">.card-minimal</h2>
 
-	{% for item in articles | limit: 1 %}
+	{% for item in events | limit: 1 %}
 		{% include components/card_minimal.html %}
 	{% endfor %}
 
@@ -92,7 +93,7 @@ layout: internal
 		 BIO CARD
 	============================================================== -->
 
-	<h2 class="clearfix m-y-lg">.bio-card</h2>
+	<h2 class="clearfix m-y-lg">.card-bio</h2>
 
 	{% include components/card_bio.html %}
 
