@@ -88,6 +88,7 @@ html {
 	@include media-breakpoint-up(sm) { font-size: $font-size-sm; }
 	@include media-breakpoint-up(md) { font-size: $font-size-md; }
 	@include media-breakpoint-up(lg) { font-size: $font-size-lg; }
+	@include media-breakpoint-up(xl) { font-size: $font-size-xl; }
 }
 
 //-----------------------------------------------------------------

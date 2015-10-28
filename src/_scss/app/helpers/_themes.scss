@@ -40,8 +40,10 @@
 
 .theme-2 .btn-primary {
 	background: $tertiary-color;
+	border-color: $tertiary-color;
 }
 
+// links
 .theme-2 .stage a:not(.btn) {
 	color: $tertiary-color;
 }
@@ -75,6 +77,7 @@
 
 .theme-3 .btn-primary {
 	background: $quaternary-color;
+	border-color: $quaternary-color;
 }
 
 .theme-3 .stage a:not(.btn) {
@@ -114,6 +117,7 @@
 
 .theme-4 .btn-primary {
 	background: $quinary-color;
+	border-color: $quinary-color;
 }
 
 .global-navigation .theme-4 {
@@ -145,6 +149,7 @@
 
 .theme-5 .btn-primary {
 	background: $senary-color;
+	border-color: $senary-color;
 }
 
 .theme-5 .stage a:not(.btn) {
@@ -180,6 +185,7 @@
 
 .theme-6 .btn-primary {
 	background: $septenary-color;
+	border-color: $septenary-color;
 }
 
 .theme-6 .stage a:not(.btn) {

@@ -58,7 +58,7 @@
 	color: white;
 
 	@include media-breakpoint-down(sm) {
-	    top: 20%;
+	    top: 25%;
 	}
 
 	.lv-hero-carousel-prev-btn,
@@ -66,6 +66,13 @@
 		font-size: rem-calc(45);
 		background: rgba(0,0,0, 0.5);
 		border-radius: 100%;
+
+		@include media-breakpoint-down(sm) {
+		    width: 30px;
+		    height: 30px;
+		    line-height: 30px;
+		    font-size: rem-calc(30);
+		}
 
 		&:hover {
 			@include media-breakpoint-up(md) {
