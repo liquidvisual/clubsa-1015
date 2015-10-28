@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Home</title>
 
     <!-- CDN -->
@@ -20,7 +20,7 @@
 
 </head>
 <body class=" ">
-    <div class="lv-super dev-mode-enabled">
+    <div class="lv-super">
         <div class="lv-page">
 
             <!-- LOGGED IN BAR -->
@@ -315,7 +315,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -323,7 +323,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				
@@ -723,7 +723,7 @@
 </div>
 				
 
-				<div class="spacer m-b-md"></div>
+				<div class="spacer m-b-lg"></div>
 
 				<!-- COLORED CARDS -->
 				<!-- FIND A CLUB -->
@@ -772,7 +772,6 @@
 				</div>
 			</div>
 		</form>
-
 	</div>
 </div>
 			</div>
@@ -843,7 +842,36 @@
 </section>
             </div>
             <div class="col-md-6 text-right hidden-sm-down">
-                <!-- { % include snippets/facebook_widget.html %} -->
+
+                
+                    
+
+
+
+<div id="fb-root"></div>
+
+<script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Facebook Widget -->
+<div class="facebook-widget" style="width: 100%; overflow: hidden;">
+    <div class="fb-page" data-href="https://www.facebook.com/CLUBSSA" data-small-header="true" data-width="500" data-height="300" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore">\
+            <blockquote cite="https://www.facebook.com/facebook">
+                <a href="https://www.facebook.com/facebook">Facebook</a>
+            </blockquote>
+        </div>
+    </div>
+</div>
+                
+
             </div>
         </div>
     </div>
@@ -869,7 +897,7 @@
     </div> <!-- .lv-super -->
 
     <!-- OFF-CANVAS MENU -->
-    <nav class="off-canvas-menu" data-off-canvas-menu  aria-hidden="true">
+    <nav class="off-canvas-menu" data-off-canvas-menu aria-hidden="true">
         
 
 
@@ -1122,7 +1150,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -1130,7 +1158,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				

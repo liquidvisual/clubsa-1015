@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Find a Club</title>
 
     <!-- CDN -->
@@ -20,7 +20,7 @@
 
 </head>
 <body class="theme-2 ">
-    <div class="lv-super dev-mode-enabled">
+    <div class="lv-super">
         <div class="lv-page">
 
             <!-- LOGGED IN BAR -->
@@ -315,7 +315,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -323,7 +323,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				
@@ -472,17 +472,23 @@
 <!-- STAGE -->
 <section class="stage">
 
-	<div class="container">
-		<header class="stage-header">
+	<!-- STAGE HEADER -->
+	<header class="stage-header">
+		<div class="container">
 			
 				<h1>Find a Club</h1>
 			
-		</header>
-	</div>
+		</div>
+	</header>
 
     <div class="container">
 	<div class="row">
-		<div class="col-md-6">
+
+		<div class="col-lg-4 col-lg-push-8 col-xl-6 col-xl-push-6 pad-left-xl">
+			<img class="m-b-md" width="100%" src="http://placehold.it/600x380" alt="...">
+		</div>
+
+		<div class="col-lg-8 col-lg-pull-4 col-xl-6 col-xl-pull-6">
 
 			<div class="m-b-md">
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
@@ -492,9 +498,9 @@
 			</div>
 
 			<!-- FIND A CLUB -->
-			<div class="m-b-lg card color-card card-inverse card-senary">
+			<div class="m-b-md card color-card card-inverse card-senary">
 				<div class="card-block clearfix">
-					<h3 class="card-title"><i class="fa fa-search"></i>&nbsp; Suburb, Postcode or Club Name</h3>
+					<h3 class="card-title"><i class="fa fa-map-marker"></i>&nbsp; Suburb, Postcode or Club Name</h3>
 					<form>
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="">
@@ -524,51 +530,47 @@
 								<td>Name of club here</td>
 								<td>8100 124354</td>
 								<td>12 Street, Suburb Here, 5040 lorem</td>
-								<td><a href="#">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
+								<td><a href="#" target="_blank">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
 							</tr>
 						
 							<tr>
 								<td>Name of club here</td>
 								<td>8100 124354</td>
 								<td>12 Street, Suburb Here, 5040 lorem</td>
-								<td><a href="#">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
+								<td><a href="#" target="_blank">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
 							</tr>
 						
 							<tr>
 								<td>Name of club here</td>
 								<td>8100 124354</td>
 								<td>12 Street, Suburb Here, 5040 lorem</td>
-								<td><a href="#">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
+								<td><a href="#" target="_blank">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
 							</tr>
 						
 							<tr>
 								<td>Name of club here</td>
 								<td>8100 124354</td>
 								<td>12 Street, Suburb Here, 5040 lorem</td>
-								<td><a href="#">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
+								<td><a href="#" target="_blank">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
 							</tr>
 						
 							<tr>
 								<td>Name of club here</td>
 								<td>8100 124354</td>
 								<td>12 Street, Suburb Here, 5040 lorem</td>
-								<td><a href="#">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
+								<td><a href="#" target="_blank">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
 							</tr>
 						
 							<tr>
 								<td>Name of club here</td>
 								<td>8100 124354</td>
 								<td>12 Street, Suburb Here, 5040 lorem</td>
-								<td><a href="#">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
+								<td><a href="#" target="_blank">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
 							</tr>
 						
 					</tbody>
 				</table>
 			</div>
-
-		</div>
-		<div class="col-md-6 pad-left-xl">
-			<img width="100%" src="http://placehold.it/600x380">
 		</div>
 	</div>
 </div>
@@ -605,7 +607,36 @@
 </section>
             </div>
             <div class="col-md-6 text-right hidden-sm-down">
-                <!-- { % include snippets/facebook_widget.html %} -->
+
+                
+                    
+
+
+
+<div id="fb-root"></div>
+
+<script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Facebook Widget -->
+<div class="facebook-widget" style="width: 100%; overflow: hidden;">
+    <div class="fb-page" data-href="https://www.facebook.com/CLUBSSA" data-small-header="true" data-width="500" data-height="300" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore">\
+            <blockquote cite="https://www.facebook.com/facebook">
+                <a href="https://www.facebook.com/facebook">Facebook</a>
+            </blockquote>
+        </div>
+    </div>
+</div>
+                
+
             </div>
         </div>
     </div>
@@ -631,7 +662,7 @@
     </div> <!-- .lv-super -->
 
     <!-- OFF-CANVAS MENU -->
-    <nav class="off-canvas-menu" data-off-canvas-menu  aria-hidden="true">
+    <nav class="off-canvas-menu" data-off-canvas-menu aria-hidden="true">
         
 
 
@@ -884,7 +915,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -892,7 +923,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				

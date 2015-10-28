@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>That's Pie Country. They Do a Lot of Baking Up There.</title>
 
     <!-- CDN -->
@@ -20,7 +20,7 @@
 
 </head>
 <body class="theme-5 ">
-    <div class="lv-super dev-mode-enabled">
+    <div class="lv-super">
         <div class="lv-page">
 
             <!-- LOGGED IN BAR -->
@@ -315,7 +315,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -323,7 +323,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				
@@ -472,26 +472,27 @@
 <!-- STAGE -->
 <section class="stage">
 
-	<div class="container">
-		<header class="stage-header">
+	<!-- STAGE HEADER -->
+	<header class="stage-header">
+		<div class="container">
 			
 				<h2 class="h1">News</h2>
 			
-		</header>
-	</div>
+		</div>
+	</header>
 
     
 
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-7">
+		<div class="col-lg-8">
 
-			<div class="m-b-lg">
+			<article class="m-b-lg">
 				<h1 class="h2">That's Pie Country. They Do a Lot of Baking Up There.</h1>
 				<p><date>12 AUGUST 2015</date></p>
 				<br>
-				<p class="image-right"><img width="100%" src="http://placehold.it/400x280"></p>
+				<p class="image-right"><img width="100%" src="http://placehold.it/350x260" alt="..."></p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lectus et nisl eleifend fringilla eleifend id lacus. In fermentum maximus fringilla. Nam non nulla eu nisl ullamcorper tempor. Quisque dolor sapien, ornare eget feugiat in, eleifend sit amet augue. Nunc blandit maximus erat, non posuere nibh posuere ut. Maecenas vitae laoreet quam. Nam eu dui quis nunc aliquet sollicitudin a ut felis. Etiam non erat metus. Nulla facilisi. Cras pharetra rutrum lobortis. Cras efficitur orci erat, a interdum enim pulvinar eu.</p>
 
 <p>Donec feugiat rhoncus nisl a tempus. Curabitur tincidunt tempor enim in finibus. Phasellus accumsan augue nec purus tristique consectetur. Nullam molestie ut tellus ac fringilla. Curabitur vestibulum erat felis, non elementum mi pretium eget. Nulla vulputate ultricies dolor, non ullamcorper justo scelerisque eu. Aenean eget auctor massa.</p>
@@ -504,10 +505,10 @@
 
 <p><a href="#">Link example here - download the PDF</a></p>
 
-			</div>
+			</article>
 
 		</div>
-		<div class="col-md-5 pad-left-xl">
+		<div class="col-lg-4 pad-left-xl">
 			<h2 class="m-b-md">Other News</h2>
 
 			
@@ -587,7 +588,36 @@
 </section>
             </div>
             <div class="col-md-6 text-right hidden-sm-down">
-                <!-- { % include snippets/facebook_widget.html %} -->
+
+                
+                    
+
+
+
+<div id="fb-root"></div>
+
+<script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Facebook Widget -->
+<div class="facebook-widget" style="width: 100%; overflow: hidden;">
+    <div class="fb-page" data-href="https://www.facebook.com/CLUBSSA" data-small-header="true" data-width="500" data-height="300" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore">\
+            <blockquote cite="https://www.facebook.com/facebook">
+                <a href="https://www.facebook.com/facebook">Facebook</a>
+            </blockquote>
+        </div>
+    </div>
+</div>
+                
+
             </div>
         </div>
     </div>
@@ -613,7 +643,7 @@
     </div> <!-- .lv-super -->
 
     <!-- OFF-CANVAS MENU -->
-    <nav class="off-canvas-menu" data-off-canvas-menu  aria-hidden="true">
+    <nav class="off-canvas-menu" data-off-canvas-menu aria-hidden="true">
         
 
 
@@ -866,7 +896,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -874,7 +904,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				

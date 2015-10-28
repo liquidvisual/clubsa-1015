@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Funding</title>
 
     <!-- CDN -->
@@ -20,7 +20,7 @@
 
 </head>
 <body class="theme-2 ">
-    <div class="lv-super dev-mode-enabled">
+    <div class="lv-super">
         <div class="lv-page">
 
             <!-- LOGGED IN BAR -->
@@ -315,7 +315,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -323,7 +323,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				
@@ -472,29 +472,32 @@
 <!-- STAGE -->
 <section class="stage">
 
-	<div class="container">
-		<header class="stage-header">
+	<!-- STAGE HEADER -->
+	<header class="stage-header">
+		<div class="container">
 			
 				<h1>Funding</h1>
 			
-		</header>
-	</div>
+		</div>
+	</header>
 
     
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-lg-6">
 
-			<p>Through Clubs SA there are many streams of funding available for the not-for-profit sector, including Clubs.</p>
+			<div class="m-b-lg">
+				<p>Through Clubs SA there are many streams of funding available for the not-for-profit sector, including Clubs.</p>
 
 <p>Before applying for any stream of funding it is recommended that you contact Clubs SA for further details and assistance on the application process.  Each stream of funding has different requirements, and is set up to support different types of projects.  Clubs SA encourages all applicants to fill out the submission forms correctly to ensure all criteria is met.</p>
 
 <p>For further information contact Annie Nixon on <a href="tel:0882902200">(08) 8290 2200</a>.</p>
 
+			</div>
 
 		</div>
-		<div class="col-md-6 pad-left-xl">
+		<div class="col-lg-6 pad-left-xl">
 
 			<ul class="block-grid-xs-1 block-grid-md-2">
 				
@@ -568,6 +571,8 @@
 				
 			</ul>
 
+			<div class="spacer m-b hidden-md-up"></div>
+
 		</div>
 	</div>
 </div>
@@ -604,7 +609,36 @@
 </section>
             </div>
             <div class="col-md-6 text-right hidden-sm-down">
-                <!-- { % include snippets/facebook_widget.html %} -->
+
+                
+                    
+
+
+
+<div id="fb-root"></div>
+
+<script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Facebook Widget -->
+<div class="facebook-widget" style="width: 100%; overflow: hidden;">
+    <div class="fb-page" data-href="https://www.facebook.com/CLUBSSA" data-small-header="true" data-width="500" data-height="300" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore">\
+            <blockquote cite="https://www.facebook.com/facebook">
+                <a href="https://www.facebook.com/facebook">Facebook</a>
+            </blockquote>
+        </div>
+    </div>
+</div>
+                
+
             </div>
         </div>
     </div>
@@ -630,7 +664,7 @@
     </div> <!-- .lv-super -->
 
     <!-- OFF-CANVAS MENU -->
-    <nav class="off-canvas-menu" data-off-canvas-menu  aria-hidden="true">
+    <nav class="off-canvas-menu" data-off-canvas-menu aria-hidden="true">
         
 
 
@@ -883,7 +917,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -891,7 +925,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				

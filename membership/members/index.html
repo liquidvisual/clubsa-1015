@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Members</title>
 
     <!-- CDN -->
@@ -20,7 +20,7 @@
 
 </head>
 <body class="theme-3 logged-in">
-    <div class="lv-super dev-mode-enabled">
+    <div class="lv-super">
         <div class="lv-page">
 
             <!-- LOGGED IN BAR -->
@@ -28,12 +28,18 @@
                 <div class="logged-in-bar FixedTop">
     <div class="container">
 
-        <p class="pull-left"><i class="fa fa-user"></i>&nbsp; You are currently logged in:<br class="hidden-md-up"> <strong>Name Here</strong></p>
+		<p>
+			<i class="fa fa-user"></i>
+			<span class="text">You are currently logged in:
+				<!-- TRUNCATE: 25 chars max -->
+				<strong class="text-name">John Smith</strong>
+			</span>
+		</p>
 
-        <div class="pull-right">
-            <a class="btn btn-members-area hidden-sm-down" href="#">Go to Members Area &nbsp;<i class="fa fa-angle-right"></i></a>
-            <a class="btn btn-log-out" href="#">Log Out &nbsp;<i class="fa fa-close"></i></a>
-        </div>
+		<div class="pull-right">
+		    <a class="btn btn-members-area hidden-sm-down m-r" href="/members/">Go to Members Area &nbsp;<i class="fa fa-angle-right"></i></a>
+		    <a class="btn btn-log-out" href="#">Log Out &nbsp;<i class="fa fa-close"></i></a>
+		</div>
 
     </div>
 </div>
@@ -328,7 +334,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -336,7 +342,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				
@@ -485,17 +491,23 @@
 <!-- STAGE -->
 <section class="stage">
 
-	<div class="container">
-		<header class="stage-header">
+	<!-- STAGE HEADER -->
+	<header class="stage-header">
+		<div class="container">
 			
 				<h1>Members</h1>
 			
-		</header>
-	</div>
+		</div>
+	</header>
 
     <div class="container">
 	<div class="row">
-		<div class="col-md-6">
+
+		<div class="col-lg-6 col-lg-push-6 pad-left-xl">
+			<img class="m-b" width="100%" src="http://placehold.it/600x380">
+		</div>
+
+		<div class="col-lg-6 col-lg-pull-6">
 
 			<div class="m-b-md">
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
@@ -506,36 +518,28 @@
 
 			<!-- MEMBER LOGIN -->
 			<div class="card color-card card-inverse card-senary">
-				<div class="card-block clearfix">
-					<h3 class="card-title"><i class="fa fa-users"></i>&nbsp; Member log in</h3>
+	<div class="card-block clearfix">
+		<h3 class="card-title"><i class="fa fa-users"></i>&nbsp; Member log in</h3>
 
-					<form>
-						<div class="row">
-							<div class="col-xl-6">
-								<input type="text" class="form-control" placeholder="User ID">
-								<br class="hidden-xl-up">
-							</div>
-							<div class="col-xl-6">
-								<div class="input-group">
-									<input type="password" class="form-control" placeholder="Password">
-									<span class="input-group-btn">
-										<button type="submit" class="btn btn-primary"><i class="fa fa-angle-right"></i></button>
-									</span>
-								</div>
-							</div>
-						</div>
-					</form>
-
+		<form>
+			<div class="row">
+				<div class="col-xs-6 p-r-0" style="width: 43%;">
+					<input type="text" class="form-control" placeholder="User ID">
+				</div>
+				<div class="col-xs-6" style="width: 57%;">
+					<div class="input-group">
+						<input type="password" class="form-control" placeholder="Password">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-primary"><i class="fa fa-angle-right"></i></button>
+						</span>
+					</div>
 				</div>
 			</div>
-
-			<br>
-			<br>
-
+		</form>
+	</div>
+</div>
 		</div>
-		<div class="col-md-6 pad-left-xl">
-			<img width="100%" src="http://placehold.it/600x380">
-		</div>
+
 	</div>
 </div>
 
@@ -571,7 +575,36 @@
 </section>
             </div>
             <div class="col-md-6 text-right hidden-sm-down">
-                <!-- { % include snippets/facebook_widget.html %} -->
+
+                
+                    
+
+
+
+<div id="fb-root"></div>
+
+<script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Facebook Widget -->
+<div class="facebook-widget" style="width: 100%; overflow: hidden;">
+    <div class="fb-page" data-href="https://www.facebook.com/CLUBSSA" data-small-header="true" data-width="500" data-height="300" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore">\
+            <blockquote cite="https://www.facebook.com/facebook">
+                <a href="https://www.facebook.com/facebook">Facebook</a>
+            </blockquote>
+        </div>
+    </div>
+</div>
+                
+
             </div>
         </div>
     </div>
@@ -597,7 +630,7 @@
     </div> <!-- .lv-super -->
 
     <!-- OFF-CANVAS MENU -->
-    <nav class="off-canvas-menu" data-off-canvas-menu  aria-hidden="true">
+    <nav class="off-canvas-menu" data-off-canvas-menu aria-hidden="true">
         
 
 
@@ -850,7 +883,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -858,7 +891,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				

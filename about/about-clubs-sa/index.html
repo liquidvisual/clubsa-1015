@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>About Clubs SA</title>
 
     <!-- CDN -->
@@ -20,7 +20,7 @@
 
 </head>
 <body class="theme-2 ">
-    <div class="lv-super dev-mode-enabled">
+    <div class="lv-super">
         <div class="lv-page">
 
             <!-- LOGGED IN BAR -->
@@ -315,7 +315,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -323,7 +323,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				
@@ -472,17 +472,21 @@
 <!-- STAGE -->
 <section class="stage">
 
-	<div class="container">
-		<header class="stage-header">
+	<!-- STAGE HEADER -->
+	<header class="stage-header">
+		<div class="container">
 			
 				<h1>About Clubs SA</h1>
 			
-		</header>
-	</div>
+		</div>
+	</header>
 
     <div class="container">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-lg-6 col-lg-push-6 pad-left-xl">
+			<img class="m-b-md" width="100%" src="http://placehold.it/600x380">
+		</div>
+		<div class="col-lg-6 col-lg-pull-6">
 			<h2 id="heading-2">Heading 2</h2>
 
 <p class="lead">Lead paragraph example. Lorem ipsum dolor sit amet, cum eu persius assentior, civibus commune eu ius. His te dicit repudiare. Meliore delicata te mea, ex est putent laoreet. Eum solum labores et. Cu semper civibus cum, pri in debitis appetere intellegebat.Dicta corpora mediocrem te sit, eu his tritani equidem. Quidam posidonium delicatissimi pro et, quando molestiae his ut.</p>
@@ -535,9 +539,6 @@
 <p><a class="btn btn-primary btn-text" href="#">Button Example</a></p>
 
 		</div>
-		<div class="col-md-6 pad-left-xl">
-			<img width="100%" src="http://placehold.it/600x380">
-		</div>
 	</div>
 </div>
 
@@ -573,7 +574,36 @@
 </section>
             </div>
             <div class="col-md-6 text-right hidden-sm-down">
-                <!-- { % include snippets/facebook_widget.html %} -->
+
+                
+                    
+
+
+
+<div id="fb-root"></div>
+
+<script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Facebook Widget -->
+<div class="facebook-widget" style="width: 100%; overflow: hidden;">
+    <div class="fb-page" data-href="https://www.facebook.com/CLUBSSA" data-small-header="true" data-width="500" data-height="300" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore">\
+            <blockquote cite="https://www.facebook.com/facebook">
+                <a href="https://www.facebook.com/facebook">Facebook</a>
+            </blockquote>
+        </div>
+    </div>
+</div>
+                
+
             </div>
         </div>
     </div>
@@ -599,7 +629,7 @@
     </div> <!-- .lv-super -->
 
     <!-- OFF-CANVAS MENU -->
-    <nav class="off-canvas-menu" data-off-canvas-menu  aria-hidden="true">
+    <nav class="off-canvas-menu" data-off-canvas-menu aria-hidden="true">
         
 
 
@@ -852,7 +882,7 @@
 		<ul class="dropdown">
 			
 			<li class="">
-				<a href="#"><span class="text">News List</span></a>
+				<a href="/news/news-item/"><span class="text">News List</span></a>
 
 				
 				
@@ -860,7 +890,7 @@
 			</li>
 			
 			<li class="">
-				<a href="#"><span class="text">News Item</span></a>
+				<a href="/news/news-item/"><span class="text">News Item</span></a>
 
 				
 				
