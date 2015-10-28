@@ -206,8 +206,8 @@
 	margin-bottom: rem-calc(20);
 
 	@include media-breakpoint-down(sm) {
-		margin: rem-calc(0 -25);
-		padding: rem-calc(5 5 10 5);
+		margin: rem-calc(0 -25); // this can break on small , check spacer
+		padding: rem-calc(0 5);
 	}
 
 	.card-block {
@@ -219,7 +219,7 @@
 	}
 
 	.text {
-		padding-right: rem-calc(20);
+		// padding-right: rem-calc(20);
 	}
 
 	input {

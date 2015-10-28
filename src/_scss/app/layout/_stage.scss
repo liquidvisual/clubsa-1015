@@ -12,7 +12,8 @@
 //-----------------------------------------------------------------
 
 .stage {
-	padding: rem-calc(20 0);
+	padding: rem-calc(25 0);
+	overflow: hidden; // IMPORTANT: stop scrollbars on mobile
 
 	@include media-breakpoint-up(md) {
 	    padding: rem-calc(70 0);

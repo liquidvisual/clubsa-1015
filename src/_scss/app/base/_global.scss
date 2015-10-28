@@ -96,8 +96,8 @@ html {
 
 .container {
 	@include media-breakpoint-down(sm) {
-	    // padding-left: rem-calc(20);
-	    // padding-right: rem-calc(20);
+	    padding-left: rem-calc(20);
+	    padding-right: rem-calc(20);
 	}
 }
 

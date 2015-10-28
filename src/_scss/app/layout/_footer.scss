@@ -22,7 +22,7 @@
 //-----------------------------------------------------------------
 
 .global-footer-body {
-	padding: rem-calc(40 0 50 0);
+	padding: rem-calc(30 0 40 0);
 	background: $primary-color;
 
 	@include media-breakpoint-up(md) {
