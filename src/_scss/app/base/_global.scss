@@ -84,10 +84,10 @@
 //-----------------------------------------------------------------
 
 html {
-	// @include media-breakpoint-up(xs) { font-size: $font-size-xs; }
-	// @include media-breakpoint-up(sm) { font-size: $font-size-sm; }
-	// @include media-breakpoint-up(md) { font-size: $font-size-md; }
-	// @include media-breakpoint-up(lg) { font-size: $font-size-lg; }
+	@include media-breakpoint-up(xs) { font-size: $font-size-xs; }
+	@include media-breakpoint-up(sm) { font-size: $font-size-sm; }
+	@include media-breakpoint-up(md) { font-size: $font-size-md; }
+	@include media-breakpoint-up(lg) { font-size: $font-size-lg; }
 }
 
 //-----------------------------------------------------------------
@@ -96,8 +96,8 @@ html {
 
 .container {
 	@include media-breakpoint-down(sm) {
-	    padding-left: rem-calc(25);
-	    padding-right: rem-calc(25);
+	    // padding-left: rem-calc(20);
+	    // padding-right: rem-calc(20);
 	}
 }
 

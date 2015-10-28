@@ -65,7 +65,7 @@ $brand-primary:                $primary-color !default;
 // // Control the default styling of most Bootstrap elements by modifying these
 // // variables. Mostly focused on spacing.
 
-// $spacer:                     1rem !default;
+$spacer:                     rem-calc(20); //1rem !default;
 // $spacer-x:                   $spacer !default;
 // $spacer-y:                   $spacer !default;
 // $border-width:               1px !default;
@@ -142,7 +142,7 @@ $font-family-sans-serif:     "Open Sans", "Helvetica Neue", Helvetica, Arial, sa
 
 $font-size-base:             rem-calc(13); // 1rem
 $font-size-lg:               rem-calc(16); // .1.25rem
-$font-size-md:               rem-calc(11); // .1.25rem
+$font-size-md:               rem-calc(14); // .1.25rem
 $font-size-sm:               rem-calc(14); // .85rem
 $font-size-xs:               rem-calc(14); // .75rem
 

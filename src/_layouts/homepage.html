@@ -5,53 +5,37 @@ layout: master
 {% assign settings = site.data.settings %}
 {% assign articles = site.data.articles %}
 
+<!-- HERO -->
 {% include hero.html %}
 
+<!-- STAGE -->
 <div class="stage">
 
-	<div class="container m-b-md">
+	<div class="container">
 		<div class="row">
-			<div class="col-md-8 pad-right-xl">
+			<div class="col-lg-8 pad-right-xl">
 
-				<ul class="cards-collapse-xs block-grid-xs-1 block-grid-md-2 block-grid-xl-3">
-					{% for item in articles | limit: 6 %}
-						<li class="col-md-4 col-lg-4">
-							{% include components/card.html %}
-						</li>
-					{% endfor %}
-				</ul>
 
-			</div>
-			<div class="col-md-4">
 
 				<!-- <div class="spacer m-b-md"></div> -->
 
-				{% for item in (1..3) %}
-					<div class="card card-slim">
-						<div class="media">
-							<a class="media-left" href="#">
-								<img class="media-object" src="http://placehold.it/154x100" alt="...">
-							</a>
-							<div class="media-body">
-								<date class="text-muted text-capitalize">07 NOVEMBER 2015</date>
-								<h3 class="media-heading">Clubs SA Awards for Excellent 2015</h3>
-								<a href="#" class="btn btn-primary"><i class="fa fa-angle-right"></i></a>
-							</div>
-						</div>
-					</div>
+			</div>
+			<div class="col-lg-4">
+
+				<!-- EVENT CARDS -->
+				{% for item in articles | limit: 3 %}
+					{% include components/card_slim.html %}
 				{% endfor %}
 
-				<div class="spacer m-b-lg"></div>
+				<div class="spacer m-b-md"></div>
 
+				<!-- COLOR CARDS -->
 				{% include components/color_cards.html %}
 
 			</div>
 		</div>
 	</div>
 
-
 	<!-- PARTNERS -->
-
 	{% include components/partners.html %}
-
 </div>

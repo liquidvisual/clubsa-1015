@@ -12,10 +12,11 @@
 //-----------------------------------------------------------------
 
 .partners-section {
+	@include clearfix();
 
-	h1 {
+	h2 {
 		// font-size: rem-calc(23);
-		color: red !important;
+		margin-bottom: rem-calc(30);
 	}
 
 	 .secondary ul {
