@@ -60,27 +60,31 @@
     </div> <!-- .lv-super -->
 
     <!-- OFF-CANVAS MENU -->
-    <nav id="off-canvas-menu" class="off-canvas-menu" aria-hidden="true">
+    <nav class="off-canvas-menu" data-off-canvas-menu  aria-hidden="true">
         {% include snippets/navigation.html %}
     </nav>
 
     <!--[if lt IE 9]>
-    <div class="lv-alert">
-        <p>You're using an outdated browser. Please <a title="Click me, you know you want to." href="http://outdatedbrowser.com">upgrade your browser</a> to improve your experience.</p>
-        <span class="lv-alert-close">&times;</span>
-    </div>
+        <div class="lv-alert-bar">
+            <p>You're using an outdated browser. Please <a title="Click me, you know you want to." href="http://outdatedbrowser.com">upgrade your browser</a> to improve your experience.</p>
+            <span class="lv-alert-bar-close-btn">&times;</span>
+        </div>
     <![endif]-->
 
     <!-- **** JAVASCRIPT **** -->
 
     <!-- build:js(src) /assets/scripts/minified.js -->
     <script src="/_bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/_bower_components/jquery-placeholder/jquery.placeholder.js"></script>
     <script src="/_bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/_bower_components/bxSlider/jquery.bxslider.min.js"></script>
     <script src="/_bower_components/jQuery.mmenu/src/js/jquery.mmenu.min.all.js"></script>
     <script src="/_bower_components/nprogress/nprogress.js"></script>
+
+    <script src="/scripts/liquidvisual/alert-bar.js"></script>
     <script src="/scripts/liquidvisual/equal-height.js"></script>
     <script src="/scripts/liquidvisual/hero.js"></script>
+    <script src="/scripts/liquidvisual/utilities.js"></script>
     <script src="/scripts/main.js"></script>
     <!-- endbuild -->
 
@@ -107,7 +111,7 @@
 
     <!-- No Javascript Warning -->
     <noscript>
-        <div class="lv-alert">
+        <div class="lv-alert-bar">
             <p>Your browser has Javascript disabled. Some features may be limited.</p>
         </div>
     </noscript>

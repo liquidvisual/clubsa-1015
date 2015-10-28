@@ -1,5 +1,5 @@
 ---
-layout: internal/text_page
+layout: internal/docs
 title: Documentation
 permalink: /docs/
 ---
@@ -9,6 +9,18 @@ permalink: /docs/
 <h2>Component Library</h2>
 <p>Use this page as a reference when tweaking values. This will prevent things breaking across components.</p>
 <p><a class="btn btn-primary btn-text" href="/component-library/">Access Component Library <i class="fa fa-angle-right"></i></a></p>
+<br>
+
+<h2>Bootstrap 4 (alpha)</h2>
+
+<p>We're now running on Bootstrap 4 - which feels much cleaner, reliable and allows us to put more onto the framework itself.</p>
+
+<p><a class="btn btn-warning btn-text" href="http://v4-alpha.getbootstrap.com/getting-started/introduction/" target="_blank">Access Bootstrap Docs <i class="fa fa-angle-right"></i></a></p>
+
+<h3>Utility Classes</h3>
+
+<p>You will likely see lots of weird classes around the place. Eg. <code>.m-b-0</code> - these are utility classes from Bootstrap which allow us to set arbitrary spacing between elements without having to hard code those values separately. <b><a href="http://v4-alpha.getbootstrap.com/components/utilities/" target="_blank">Visit Utilities Here</a></b></p>
+
 <br>
 
 <h2>All Available Pages for {{ site.data.settings.title }}</h2>

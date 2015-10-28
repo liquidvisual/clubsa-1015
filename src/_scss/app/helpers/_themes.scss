@@ -42,6 +42,10 @@
 	background: $tertiary-color;
 }
 
+.theme-2 .stage a:not(.btn) {
+	color: $tertiary-color;
+}
+
 .global-navigation .theme-2 {
 	.top-parent-anchor {
 		background: $tertiary-color;
@@ -73,6 +77,10 @@
 	background: $quaternary-color;
 }
 
+.theme-3 .stage a:not(.btn) {
+	color: $quaternary-color;
+}
+
 .global-navigation .theme-3 {
 	.top-parent-anchor {
 		background: $quaternary-color;
@@ -98,6 +106,10 @@
 
 .theme-4 .global-navigation {
 	border-color: $quinary-color;
+}
+
+.theme-4 .stage a:not(.btn) {
+	color: $quinary-color;
 }
 
 .theme-4 .btn-primary {
@@ -135,6 +147,10 @@
 	background: $senary-color;
 }
 
+.theme-5 .stage a:not(.btn) {
+	color: $senary-color;
+}
+
 .global-navigation .theme-5 {
 	.top-parent-anchor {
 		background: $senary-color;
@@ -164,6 +180,10 @@
 
 .theme-6 .btn-primary {
 	background: $septenary-color;
+}
+
+.theme-6 .stage a:not(.btn) {
+	color: $septenary-color;
 }
 
 .global-navigation .theme-6 {

@@ -1,7 +1,7 @@
 /*
     LISTS.CSS
 
-    - Last updated: 10.12.14
+    - Last updated: 27.10.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -11,9 +11,9 @@
 //
 //-----------------------------------------------------------------
 
-ul li {
-	margin-bottom: rem-calc(5);
-}
+// ul li {
+// 	margin-bottom: rem-calc(5);
+// }
 
 .triangle-list {
 	list-style: none;
@@ -38,12 +38,4 @@ ul li {
 	&[class*='block-grid'] li {
 		padding-bottom: 0; // Let list items set their own inner padding
 	}
-}
-
-//=========================================
-// Foundation List Override
-//=========================================
-
-ol ol ul, ol ul ul, ul ol ul, ul ul ul {
-    list-style: circle;
 }

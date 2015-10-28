@@ -1,17 +1,41 @@
 /*
     SECTIONS.CSS
 
-    - Last updated: 00.00.00
+    - Last updated: 28.10.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Sections
+// Partners
 //-----------------------------------------------------------------
 
+.partners-section {
 
+	h1 {
+		// font-size: rem-calc(23);
+		color: red !important;
+	}
+
+	 .secondary ul {
+
+	 	@include media-breakpoint-up(md) {
+	 	    padding-top: rem-calc(30);
+	 	}
+
+	 	@include media-breakpoint-up(xl) {
+	 	    padding-top: rem-calc(35);
+	 	}
+
+		li {
+			// SMALL ONLY
+			@include media-breakpoint-down(md) {
+				padding: 5px;
+			}
+		}
+	}
+}
 
 //=========================================
 //

@@ -2,7 +2,7 @@
 /*
     MAIN.CSS
 
-    - Last updated: 12.10.15
+    - Last updated: 27.10.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -22,7 +22,7 @@
 // Liquid Visual
 //-----------------------------------------------------------------
 
-@import "liquidvisual/components/alertbar";
+@import "liquidvisual/components/alert-bar";
 @import "liquidvisual/components/block-grid";
 @import "liquidvisual/components/breadcrumb";
 @import "liquidvisual/components/hero";
@@ -86,7 +86,6 @@
 
 @import "../_bower_components/font-awesome/scss/font-awesome";
 // @import "../_bower_components/slick.js/slick/slick";
-// @import "liquidvisual/vendor/foundation-icons";
 @import "liquidvisual/vendor/magnific-popup/main";
 @import "liquidvisual/vendor/mmenu/main";
 @import "liquidvisual/vendor/nprogress";
