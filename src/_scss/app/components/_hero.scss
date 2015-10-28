@@ -28,8 +28,12 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-size: rem-calc(23);
+		font-size: rem-calc(17);
 		color: white;
+
+		@include media-breakpoint-up(lg) {
+		    font-size: rem-calc(23);
+		}
 	}
 
 	p {

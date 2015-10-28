@@ -23,8 +23,8 @@
             mode: 'horizontal', // fade (much have fixed height or won't work)
             adaptiveHeight: true,
             responsive: true,
-            touchEnabled: false,
-            speed: 1500,
+            touchEnabled: true,
+            speed: 1000,
             pause: 6000,
             slideMargin: 0,
             slideSelector: ".lv-hero-item",
