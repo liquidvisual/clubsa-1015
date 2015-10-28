@@ -6,6 +6,28 @@
         * Multiple items in carousel_slides.yml triggers carousel mode
         * .has-auto-height - caption will detemine height
         * .has-fixed-height - used for internal pages to set a height
+
+        * Example of internal hero:
+
+        {% assign hero = page.hero_image %}
+
+        <!-- HERO -->
+        <div class="lv-hero">
+            <div class="lv-hero-item" style="background-image: url('{{ hero | prepend: site.assets }}')" data-background-image="{{ hero | prepend: site.assets }}">
+                <div class="row outer-row">
+                    <div class="columns">
+                        <div class="lv-hero-item-caption animated fadeInLeft">
+                            {% if page.hero_override %}
+                                <h2 class="h1">{{ hero.title }}</h2>
+                            {% else %}
+                                <h1>{{ hero.title }}</h1>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .lv-hero -->
+
 {% endcomment %}
 
 {% assign hero_images = site.data.carousel_slides %}

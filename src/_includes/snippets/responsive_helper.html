@@ -1,10 +1,10 @@
 <script>
 	/*
-	    Responsive Helper - Last updated: 12.10.15
+	    Responsive Helper - Last updated: 29.10.15
 
 	    - Usage -
 
-	    Reference JS file before closing </body>. Remove ".dev-mode-enabled" near body on prod.
+	    Reference JS file before closing </body>.
 	    Wrap all contents into <div class="lv-super"></div>
 	*/
 	;(function($) {
@@ -23,50 +23,48 @@
 	    // Responsive Helper
 	    //==================================================
 
-	    if ($('.dev-mode-enabled').length) { // place .dev-mode on body or near
+        function responsiveHelper() {
+            var body = $('body');
 
-	        function responsiveHelper() {
-	            var lvSuper = $('.lv-super');
+            if ($('.lv-screen-data').length != 1) {
+                body.append('<div class="lv-screen-data"></div>');
+            }
+            var screenWidth = $(window).width();
+            var screenHeight = $(window).height();
+            var device;
 
-	            if ($('.lv-screen-data').length != 1) {
-	                lvSuper.append('<div class="lv-screen-data"></div>');
-	            }
-	            var screenWidth = $(window).width();
-	            var screenHeight = $(window).height();
-	            var device;
+            if (screenWidth < sm) device = "xs";
+            if (screenWidth >= sm && screenWidth < md) device = "sm";
+            if (screenWidth >= md && screenWidth < lg) device = "md";
+            if (screenWidth >= lg && screenWidth < xl) device = "lg";
+            if (screenWidth >= xl) device = "xl";
 
-	            if (screenWidth < sm) device = "xs";
-	            if (screenWidth >= sm && screenWidth < md) device = "sm";
-	            if (screenWidth >= md && screenWidth < lg) device = "md";
-	            if (screenWidth >= lg && screenWidth < xl) device = "lg";
-	            if (screenWidth >= xl) device = "xl";
+            $('.lv-screen-data').html(screenWidth+" x "+screenHeight+"<br>"+device)
+                .css({
+                    'position': 'fixed',
+                    'top': 0,
+                    'padding': '10px 20px',
+                    'background': 'rgba(0,0,0,0.5)',
+                    'font-family': 'Helvetica Neue',
+                    'font-size': '14px',
+                    'color': 'white',
+                    'z-index': 2147483646,
+                })
+                .click(function(){
+                    body.toggleClass('developer');
+                });
+        }
 
-	            $('.lv-screen-data').html(screenWidth+" x "+screenHeight+"<br>"+device)
-	                .css({
-	                    'position': 'fixed',
-	                    'top': 0,
-	                    'padding': '10px 20px',
-	                    'background': 'rgba(0,0,0,0.5)',
-	                    'font-family': 'Helvetica Neue',
-	                    'font-size': '14px',
-	                    'color': 'white',
-	                    'z-index': 9999
-	                })
-	                .click(function(){
-	                    lvSuper.toggleClass('developer');
-	                });
-	        }
+        // Launch it
+        responsiveHelper();
 
-	        // Launch it
-	        responsiveHelper();
+        //==================================================
+        // Resize
+        //==================================================
 
-	        //==================================================
-	        // Resize
-	        //==================================================
+        $(window).resize(function(){
+            responsiveHelper();
+        });
 
-	        $(window).resize(function(){
-	            responsiveHelper();
-	        });
-	    }
 	})(jQuery);
 </script>

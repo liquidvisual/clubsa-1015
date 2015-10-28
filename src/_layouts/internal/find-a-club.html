@@ -4,16 +4,21 @@ layout: internal
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-6">
+
+		<div class="col-lg-4 col-lg-push-8 col-xl-6 col-xl-push-6 pad-left-xl">
+			<img class="m-b-md" width="100%" src="http://placehold.it/600x380" alt="...">
+		</div>
+
+		<div class="col-lg-8 col-lg-pull-4 col-xl-6 col-xl-pull-6">
 
 			<div class="m-b-md">
 				{{ content }}
 			</div>
 
 			<!-- FIND A CLUB -->
-			<div class="m-b-lg card color-card card-inverse card-senary">
+			<div class="m-b-md card color-card card-inverse card-senary">
 				<div class="card-block clearfix">
-					<h3 class="card-title"><i class="fa fa-search"></i>&nbsp; Suburb, Postcode or Club Name</h3>
+					<h3 class="card-title"><i class="fa fa-map-marker"></i>&nbsp; Suburb, Postcode or Club Name</h3>
 					<form>
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="">
@@ -43,16 +48,12 @@ layout: internal
 								<td>Name of club here</td>
 								<td>8100 124354</td>
 								<td>12 Street, Suburb Here, 5040 lorem</td>
-								<td><a href="#">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
+								<td><a href="#" target="_blank">Map&nbsp;<i class="fa fa-angle-right inline"></i></a></td>
 							</tr>
 						{% endfor %}
 					</tbody>
 				</table>
 			</div>
-
-		</div>
-		<div class="col-md-6 pad-left-xl">
-			<img width="100%" src="http://placehold.it/600x380">
 		</div>
 	</div>
 </div>

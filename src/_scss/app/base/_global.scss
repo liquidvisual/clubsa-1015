@@ -42,13 +42,27 @@
 	z-index: 99999;
 
 	p {
-		margin: rem-calc(0 20 0 0);
+		margin: rem-calc(15 20 0 0);
 		font-size: rem-calc(13);
 		color: white;
+		line-height: 16px;
+		float: left;
+		padding-left: 10px;
+
+		.text {
+			position: relative;
+			left: 22px;
+		}
 
 		.fa {
+			position: absolute;
 			font-size: rem-calc(20);
+			padding-right: 10px;
 		}
+	}
+
+	.text-name {
+		display: block;
 	}
 
 	.btn {
@@ -72,10 +86,6 @@
 			font-size: inherit;
 			font-weight: bold;
 		}
-	}
-
-	.btn-members-area {
-		margin-right: rem-calc(20);
 	}
 }
 

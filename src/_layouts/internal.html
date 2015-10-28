@@ -12,15 +12,16 @@ layout: master
 <!-- STAGE -->
 <section class="stage">
 
-	<div class="container">
-		<header class="stage-header">
+	<!-- STAGE HEADER -->
+	<header class="stage-header">
+		<div class="container">
 			{% if page.title_override %}
 				<h2 class="h1">{{ page.title_override }}</h2>
 			{% else %}
 				<h1>{{ page.title }}</h1>
 			{% endif %}
-		</header>
-	</div>
+		</div>
+	</header>
 
     {{ content }}
 

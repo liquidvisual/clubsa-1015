@@ -4,43 +4,20 @@ layout: internal
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-6">
+
+		<div class="col-lg-6 col-lg-push-6 pad-left-xl">
+			<img class="m-b" width="100%" src="http://placehold.it/600x380">
+		</div>
+
+		<div class="col-lg-6 col-lg-pull-6">
 
 			<div class="m-b-md">
 				{{ content }}
 			</div>
 
 			<!-- MEMBER LOGIN -->
-			<div class="card color-card card-inverse card-senary">
-				<div class="card-block clearfix">
-					<h3 class="card-title"><i class="fa fa-users"></i>&nbsp; Member log in</h3>
-
-					<form>
-						<div class="row">
-							<div class="col-xl-6">
-								<input type="text" class="form-control" placeholder="User ID">
-								<br class="hidden-xl-up">
-							</div>
-							<div class="col-xl-6">
-								<div class="input-group">
-									<input type="password" class="form-control" placeholder="Password">
-									<span class="input-group-btn">
-										<button type="submit" class="btn btn-primary"><i class="fa fa-angle-right"></i></button>
-									</span>
-								</div>
-							</div>
-						</div>
-					</form>
-
-				</div>
-			</div>
-
-			<br>
-			<br>
-
+			{% include components/card_color_member_login.html %}
 		</div>
-		<div class="col-md-6 pad-left-xl">
-			<img width="100%" src="http://placehold.it/600x380">
-		</div>
+
 	</div>
 </div>

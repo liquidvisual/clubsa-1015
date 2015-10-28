@@ -49,10 +49,10 @@
 	border-bottom: 1px solid #E0E0E2;
 
 	a {
-		color: $senary-color;
+		color: $senary-color !important;
 
 		&:hover {
-			color: darken($senary-color, 10%); // redundant after type?
+			color: darken($senary-color, 10%) !important; // redundant after type?
 		}
 	}
 }

@@ -7,20 +7,20 @@ layout: internal
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-7">
+		<div class="col-lg-8">
 
-			<div class="m-b-lg">
+			<article class="m-b-lg">
 				<h1 class="h2">{{ page.title }}</h1>
 				<br>
-				<p>{{ "Saturday 7 November 2015, 6.30PM-10.00PM" | upcase }}<br>
-				LOCATION: ADELAIDE OVAL, WAR MEMORIAL DR, NORTH ADELAIDE SA 5006</p>
+				<p>{{ "Saturday 7 November 2015, 6.30PM-10.00PM" | upcase }}</p>
+				<p>LOCATION: ADELAIDE OVAL, WAR MEMORIAL DR, NORTH ADELAIDE SA 5006</p>
 				<br>
-				<p class="image-right"><img width="100%" src="http://placehold.it/400x280"></p>
+				<p class="image-right"><img class="m-b" width="100%" src="http://placehold.it/350x260" alt="..."></p>
 				{{ content }}
-			</div>
+			</article>
 
 		</div>
-		<div class="col-md-5 pad-left-xl">
+		<div class="col-lg-4 pad-left-xl">
 			<h2 class="m-b-md"><i class="fa fa-calendar"></i> Other Events</h2>
 
 			{% for item in events %}

@@ -6,12 +6,14 @@ layout: internal
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-lg-6">
 
-			{{ content }}
+			<div class="m-b-lg">
+				{{ content }}
+			</div>
 
 		</div>
-		<div class="col-md-6 pad-left-xl">
+		<div class="col-lg-6 pad-left-xl">
 
 			<ul class="block-grid-xs-1 block-grid-md-2">
 				{% for item in sections | limit: 4 %}
@@ -20,6 +22,8 @@ layout: internal
 					</li>
 				{% endfor %}
 			</ul>
+
+			<div class="spacer m-b hidden-md-up"></div>
 
 		</div>
 	</div>

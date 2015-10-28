@@ -7,7 +7,7 @@ layout: internal
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-7">
+		<div class="col-lg-7 col-xl-8">
 
 			<div class="m-b-lg">
 				{{ content }}
@@ -21,12 +21,14 @@ layout: internal
 				{% endfor %}
 			</ul>
 
+			<div class="spacer m-b-lg hidden-lg-up"></div>
+
 		</div>
-		<div class="col-md-5 pad-left-xl">
+		<div class="col-lg-5 col-xl-4 pad-left-xl">
 			<h2 class="m-b-md"><i class="fa fa-calendar"></i> Upcoming Events</h2>
 
 			{% for item in events %}
-				{% include components/card_slim.html %}
+				{% include components/card_slim.html class="card-list-item" %}
 			{% endfor %}
 
 		</div>

@@ -88,9 +88,9 @@
   include_children_in_nav: true
   children:
     - title: News List
-      url: "#"
+      url: "/news/news-item/"
     - title: News Item
-      url: "#"
+      url: "/news/news-item/"
 
 - title: Events
   url: "/events/"

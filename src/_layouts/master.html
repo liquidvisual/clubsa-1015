@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ page.title }}</title>
 
     <!-- CDN -->
@@ -23,7 +23,7 @@
 
 </head>
 <body class="{{ page.theme }} {{ page.status }}">
-    <div class="lv-super dev-mode-enabled">
+    <div class="lv-super">
         <div class="lv-page">
 
             <!-- LOGGED IN BAR -->
@@ -60,7 +60,7 @@
     </div> <!-- .lv-super -->
 
     <!-- OFF-CANVAS MENU -->
-    <nav class="off-canvas-menu" data-off-canvas-menu  aria-hidden="true">
+    <nav class="off-canvas-menu" data-off-canvas-menu aria-hidden="true">
         {% include snippets/navigation.html %}
     </nav>
 
@@ -89,7 +89,7 @@
     <!-- endbuild -->
 
     {% if site.mode != 'build' %}
-        {% include snippets/responsive_helper.html %}
+        <!-- { % include snippets/responsive_helper.html %} -->
     {% endif %}
 
     {% comment %}

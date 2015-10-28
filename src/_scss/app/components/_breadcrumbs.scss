@@ -1,7 +1,7 @@
 /*
     BREADCRUMBS.CSS
 
-    - Last updated: 00.00.00
+    - Last updated: 29.10.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -12,11 +12,11 @@
 //-----------------------------------------------------------------
 
 .breadcrumbs {
-	margin: rem-calc(15 0 -23 0);
+	margin: rem-calc(15 0 -50 0);
 	font-size: rem-calc(12);
 
 	@include media-breakpoint-up(md) {
-	    margin: rem-calc(15 0 -46 0);
+	    margin: rem-calc(15 0 -56 0);
 	}
 }
 

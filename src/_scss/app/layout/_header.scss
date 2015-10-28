@@ -32,11 +32,12 @@ $header-height-lg: 180px !default;
 
 	@include media-breakpoint-up(lg) {
 	    height: $header-height-lg;
+	    position: absolute;
+	    box-shadow: none;
 	}
 
 	@include media-breakpoint-up(xl) {
-		position: absolute;
-		box-shadow: none;
+
 	}
 }
 

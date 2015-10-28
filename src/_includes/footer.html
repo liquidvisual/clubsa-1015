@@ -8,7 +8,11 @@
                 {% include contact_info.html %}
             </div>
             <div class="col-md-6 text-right hidden-sm-down">
-                <!-- { % include snippets/facebook_widget.html %} -->
+
+                {% if site.mode == 'build' %}
+                    {% include snippets/facebook_widget.html %}
+                {% endif %}
+
             </div>
         </div>
     </div>
