@@ -26,7 +26,7 @@
 
     var equalHeight = function(target){
 
-    	if ($(window).width() >= 754) {
+    	if ($(window).width() >= 768) {
 
     		var currentTallest = 0;
 	    	var currentRowStart = 0;

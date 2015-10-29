@@ -43,7 +43,7 @@ $dropdowns-have-anchor-borders : false !default;
     padding: 0; // reset
     text-transform: uppercase;
     font-size: rem-calc(13);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 //=========================================
@@ -90,7 +90,7 @@ $dropdowns-have-anchor-borders : false !default;
 }
 
 //-----------------------------------------------------------------
-// Top Parent Anchors
+// Top Parent Anchors (Visible)
 //-----------------------------------------------------------------
 
 .topbar .top-parent-anchor {

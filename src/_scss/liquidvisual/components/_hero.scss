@@ -1,7 +1,7 @@
 /*
     HERO.CSS
 
-    - updated: 12.10.15
+    - updated: 29.10.15
     - notes:
         * liquidvisual recommends bxSlider for hero carousels
 */
@@ -74,6 +74,7 @@ $hero-carousel-bullet-size:   rem-calc(16);
 
 .lv-hero-item {
     float: left;
+    width: 100%; // need
     height: 100%;
     background-repeat: no-repeat;
     background-position: center center;

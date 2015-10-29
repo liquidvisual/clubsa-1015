@@ -24,7 +24,9 @@ layout: internal
 			<h2 class="m-b-md"><i class="fa fa-calendar"></i> Other Events</h2>
 
 			{% for item in events %}
-				{% include components/card_slim.html class="card-list-item" %}
+				<div class="card-list">
+					{% include components/card_slim.html class="card-list-item" %}
+				</div>
 			{% endfor %}
 
 		</div>

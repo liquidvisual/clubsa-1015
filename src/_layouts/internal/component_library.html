@@ -15,7 +15,14 @@ layout: internal
 	<h2 class="clearfix m-y-lg">Buttons</h2>
 
 	<a href="#" class="btn btn-primary btn-text">Read More <i class="fa fa-angle-right"></i></a>&nbsp;
-	<a href="#" class="btn btn-primary"><i class="fa fa-angle-right"></i></a>
+	<a href="#" class="btn btn-primary"><i class="fa fa-angle-right"></i></a> <br><br>
+
+	<h3 class="m-y-md">Text editor buttons</h3>
+
+	<span class="document-link"><a href="#" target="_blank">Click here to download etc etc</a></span>
+	<span class="document-link"><a href="#" target="_blank">Another Link</a></span>
+	<span class="document-link"><a href="#" target="_blank">Another Link</a></span>
+	<span class="document-link"><a href="#" target="_blank">Another Link</a></span>
 
 	<!-- =========================================================
 		 CARD
@@ -75,10 +82,12 @@ layout: internal
 		 CARD LIST ITEM (zero X borders, added Y padding)
 	============================================================== -->
 
-	<h2 class="clearfix m-y-lg">.card-slim.card-list-item</h2>
+	<h2 id="card-list" class="clearfix m-y-lg">.card-slim inside .card-list</h2>
 
 	{% for item in articles | limit: 3 %}
-		{% include components/card_slim.html class="card-list-item" %}
+		<div class="card-list">
+			{% include components/card_slim.html %}
+		</div>
 	{% endfor %}
 
 	<!-- =========================================================

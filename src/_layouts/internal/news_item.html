@@ -22,7 +22,9 @@ layout: internal
 			<h2 class="m-b-md">Other News</h2>
 
 			{% for item in news | limit: 3 %}
-				{% include components/card_slim.html class="card-list-item" %}
+				<div class="card-list">
+					{% include components/card_slim.html %}
+				</div>
 			{% endfor %}
 
 		</div>

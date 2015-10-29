@@ -52,6 +52,12 @@
 			display: none; // override btn
 		}
 	}
+
+	&:hover .btn {
+		@include media-breakpoint-up(xl) {
+		    color: white;
+		}
+	}
 }
 
 //-----------------------------------------------------------------
@@ -67,19 +73,22 @@
 
 	.lv-hero-carousel-prev-btn,
 	.lv-hero-carousel-next-btn {
+		@include transition();
 		font-size: rem-calc(45);
 		background: rgba(0,0,0, 0.5);
 		border-radius: 100%;
+		margin: rem-calc(0 40); // revised
 
 		@include media-breakpoint-down(sm) {
 		    width: 30px;
 		    height: 30px;
 		    line-height: 30px;
+		    margin: 0; // revised
 		    font-size: rem-calc(30);
 		}
 
 		&:hover {
-			@include media-breakpoint-up(md) {
+			@include media-breakpoint-up(xl) {
 			    background: rgba(0,0,0, 0.6);
 			}
 		}

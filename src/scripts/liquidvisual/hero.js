@@ -19,13 +19,13 @@
         var isTablet = $(window).width() < 1025; // no more touch
 
         $('.lv-hero').bxSlider({
-            auto: false, //(isTablet ? false : true),
+            auto: true, //(isTablet ? false : true),
             mode: 'horizontal', // fade (much have fixed height or won't work)
             adaptiveHeight: true,
             responsive: true,
             touchEnabled: true,
             speed: 1000,
-            pause: 6000,
+            pause: 4000,
             slideMargin: 0,
             slideSelector: ".lv-hero-item",
             minSlides: 1,
