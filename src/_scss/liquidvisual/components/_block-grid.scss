@@ -1,7 +1,7 @@
 /*
     BLOCK-GRID.CSS
 
-    - updated: 29.10.15
+    - updated: 30.10.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -19,11 +19,12 @@
 // Converted to SCSS by Rasmus Jürs (https://github.com/Jursdotme)
 
 [class*="block-grid-"] {
+  @include clearfix();
   display: block;
-  list-style: none;
   margin: -($grid-gutter-width/2);
   padding: 0;
-  @include clearfix();
+  list-style: none;
+  overflow: hidden; // fixes issue with IE
 }
 
 [class*="block-grid-"] > li,
@@ -33,16 +34,19 @@
   padding: ($grid-gutter-width/2);
   height: auto;
   float: left;
-
-  padding: 0 ($grid-gutter-width/2) $grid-gutter-width ($grid-gutter-width/2) \9; // IE9 Hack
 }
 
-// MS EDGE - EFF OFF
-@supports (-ms-accelerator:true) {
-  [class*="block-grid-"] > li {
-    padding: 0 ($grid-gutter-width/2) $grid-gutter-width ($grid-gutter-width/2);
-  }
-}
+// // IE9 HACK
+// .lt-ie10 [class*="block-grid-"] > li {
+//   // padding: 0 ($grid-gutter-width/2) $grid-gutter-width ($grid-gutter-width/2);
+// }
+
+// MS EDGE HACK
+// @supports (-ms-accelerator:true) {
+//   [class*="block-grid-"] > li {
+//     // padding: 0 ($grid-gutter-width/2) $grid-gutter-width ($grid-gutter-width/2);
+//   }
+// }
 
 //=========================================
 // Single

@@ -18,3 +18,7 @@ Vestibulum fringilla, ex ut feugiat lobortis, ligula nisl volutpat risus, ut ege
 Integer venenatis cursus metus, et elementum nulla cursus a. Pellentesque egestas finibus orci in maximus. Vestibulum quis magna at ipsum viverra pellentesque sit amet eu sem. Nunc id bibendum felis, venenatis interdum orci. Etiam tortor quam, sollicitudin vel bibendum nec, pellentesque at metus. Duis sit amet erat dignissim, bibendum tortor sed, tincidunt erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur euismod in magna eu fringilla. Duis vel dolor urna. In sit amet lobortis risus. Donec sollicitudin, lacus ac posuere tristique, neque justo lobortis massa, id suscipit massa libero quis elit.
 
 [Link example here - download the PDF](#)
+
+<span class="btn-document"><a href="#" target="_blank">Document Link Here</a></span>
+<span class="btn-document"><a href="#" target="_blank">Document Link Here</a></span>
+<span class="btn-document"><a href="#" target="_blank">Document Link Here</a></span>

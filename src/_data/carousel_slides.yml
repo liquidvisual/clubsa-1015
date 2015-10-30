@@ -6,9 +6,9 @@
 - title: "Seize the Day"
   body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum libero."
   url: /
-  image: "http://placehold.it/1440x400/737182"
+  image: "/img/content/hero-2.png"
 
 - title: "Your Time is Now"
   body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum"
   url: /
-  image: "http://placehold.it/1440x400"
+  image: "/img/content/hero-3.png"

@@ -48,3 +48,7 @@ Ut wisi imperdiet sit, eam ut audiam eripuit. Fuisset epicuri phaedrum pri eu, d
 [Text Link Example Here](#)
 
 <a class="btn btn-primary btn-text" href="#">Button Example</a>
+
+<span class="btn-document"><a href="#" target="_blank">Document Link Here</a></span>
+<span class="btn-document"><a href="#" target="_blank">Document Link Here</a></span>
+<span class="btn-document"><a href="#" target="_blank">Document Link Here</a></span>

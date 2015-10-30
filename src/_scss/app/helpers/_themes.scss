@@ -14,7 +14,7 @@
 // CARD HOVER - BTN - only for component library - rest will override it
 //=========================================
 
-.card-link:hover .btn {
+.card-anchor:hover .btn {
 	@include media-breakpoint-up(xl) {
 	    background: darken($senary-color, 10%);
 	    border-color: darken($senary-color, 10%);
@@ -70,7 +70,7 @@
 // CARD HOVER - BTN
 //=========================================
 
-.theme-2 .card-link:hover .btn,
+.theme-2 .card-anchor:hover .btn,
 .theme-2 .btn:hover {
 	@include media-breakpoint-up(xl) {
 	    background: darken($tertiary-color, 10%);
@@ -131,7 +131,7 @@
 // CARD HOVER - BTN
 //=========================================
 
-.theme-3 .card-link:hover .btn,
+.theme-3 .card-anchor:hover .btn,
 .theme-3 .btn:hover {
 	@include media-breakpoint-up(xl) {
 	    background: darken($quaternary-color, 10%);
@@ -192,7 +192,7 @@
 // CARD HOVER - BTN
 //=========================================
 
-.theme-4 .card-link:hover .btn,
+.theme-4 .card-anchor:hover .btn,
 .theme-4 .btn:hover {
 	@include media-breakpoint-up(xl) {
 	    background: darken($quinary-color, 10%);
@@ -253,7 +253,7 @@
 // CARD HOVER - BTN
 //=========================================
 
-.theme-5 .card-link:hover .btn,
+.theme-5 .card-anchor:hover .btn,
 .theme-5 .btn:hover {
 	@include media-breakpoint-up(xl) {
 	    background: darken($senary-color, 10%);
@@ -314,7 +314,7 @@
 // CARD HOVER - BTN
 //=========================================
 
-.theme-6 .card-link:hover .btn,
+.theme-6 .card-anchor:hover .btn,
 .theme-6 .btn:hover {
 	@include media-breakpoint-up(xl) {
 	    background: darken($septenary-color, 10%);

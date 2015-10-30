@@ -8,7 +8,7 @@
 			<h3 class="card-title">{{ item.title }}</h3>
 
 			{% if item.body %}
-				<p><date class="text-uppercase">{{ item.date }}</date></p>
+				<date class="text-uppercase">{{ item.date }}</date>
 
 				<!-- TRUNCATE: 120 max chars -->
 			    <p class="card-text">{{ item.body | truncate: 120 }}</p>
