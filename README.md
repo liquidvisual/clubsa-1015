@@ -1,9 +1,9 @@
-New Project
+clubsa-1015
 =============================
 
 ## To Run
 
-    git clone git@github.com:liquidvisual/URL-GOES-HERE.git
+    git clone git@github.com:liquidvisual/clubsa-1015.git
     bundle install
     npm install
     bower install

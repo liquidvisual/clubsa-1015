@@ -1,5 +1,5 @@
 ---
-layout: internal/find-a-club
+layout: internal/find_a_club
 title: Find a Club
 permalink: /about/find-a-club/
 breadcrumbs: true
