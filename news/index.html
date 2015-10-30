@@ -7,7 +7,8 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>News</title>
 
     <!-- CDN -->
@@ -664,7 +665,20 @@
 
 	<br>
 	<br>
-	<p class="text-lg-right"><a class="btn btn-primary btn-text" href="/news/">Previous News <i class="fa fa-angle-right"></i></a></p>
+
+	<!--  Example 1 -->
+	<p>
+		<a class="pull-left btn btn-primary btn-text" href="/news/"><i class="fa fa-angle-left"></i> Recent News</a>
+		<a class="pull-right btn btn-primary btn-text disabled" href="/news/">More News <i class="fa fa-angle-right"></i></a>
+	</p>
+
+	<div class="clearfix m-b-lg"></div>
+
+	<!--  Example 2 -->
+	<p class="text-md-right">
+		<a class="btn btn-primary btn-text m-r" href="/news/"><i class="fa fa-angle-left"></i> Recent News</a>
+		<a class="btn btn-primary btn-text" href="/news/">More News <i class="fa fa-angle-right"></i></a>
+	</p>
 
 </div>
 
