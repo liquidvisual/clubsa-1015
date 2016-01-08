@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>About</title>
+    <title>Online Payments</title>
 
     <!-- CDN -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/assets/css/minified.css">
 
 </head>
-<body class="theme-2 ">
+<body class="theme-3 ">
     <div class="lv-super">
         <div class="lv-page">
 
@@ -79,7 +79,7 @@
 	
 	
 	
-	<li class="theme-2 active  has-dropdown  ">
+	<li class="theme-2 has-dropdown  ">
 
 		
 		
@@ -171,7 +171,7 @@
 	</li>
 	
 	
-	<li class="theme-3 has-dropdown  ">
+	<li class="theme-3 active  has-dropdown  ">
 
 		
 		
@@ -467,7 +467,11 @@
     <li><a href="/">Home</a></li>
     
         
-            <li class="active">about</li>
+            <li><a href="/membership/">membership</a></li>
+        
+    
+        
+            <li class="active">online payments</li>
         
     
 </ol>
@@ -482,156 +486,131 @@
 	<header class="stage-header">
 		<div class="container">
 			
-				<h1>About</h1>
+				<h1>Online Payments</h1>
 			
 		</div>
 	</header>
 
-    
+    <div class="container">
+	<div class="row">
 
-
-<div class="container">
-
-	<ul class="block-grid-xs-1 block-grid-md-2 block-grid-lg-3 block-grid-xl-4">
-		
-			<li class="col-md-4 col-lg-4">
-				<a class="card-anchor" href="/about/about-clubs-sa/">
-	<div class="card card-minimal">
-		<div class="card-head">
-			<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="About Clubs SA">
-			<span class="pull-right btn btn-primary"><i class="fa fa-angle-right"></i></span>
+		<div class="col-lg-6 col-lg-push-6 pad-left-xl">
+			<img class="m-b" width="100%" src="http://placehold.it/600x380">
 		</div>
-		<div class="card-block" data-match-height>
-			<h3 class="card-title">About Clubs SA</h3>
 
-			
+		<div class="col-lg-6 col-lg-pull-6">
 
+			<div class="m-b-md">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.</p>
+
+			</div>
+
+			<!-- ONLINE PAYMENTS -->
+			<div class="m-b-md card color-card card-inverse card-senary">
+    <div class="card-block clearfix">
+        <h3 class="card-title"><i class="fa fa-credit-card"></i>&nbsp; Enter your payment details</h3>
+
+		<form id="form" data-toggle="validator">
+
+			<!-- NAME -->
+			<fieldset class="form-group">
+				<label for="name">Name</label>
+				<input class="form-control" id="name" type="text" placeholder="Your name" required>
+				<small class="error">Your name is required.</small>
+			</fieldset>
+
+			<!-- EMAIL -->
+			<fieldset class="form-group">
+				<label for="email">Email address</label>
+				<input class="form-control" id="email" type="email" placeholder="Enter email" required>
+				<small class="error">A valid email is required.</small>
+				<small class="text-muted">We'll never share your email with anyone else.</small>
+			</fieldset>
+
+			<!-- PASSWORD -->
+			<fieldset class="form-group">
+				<label for="password">Password</label>
+				<input class="form-control" id="password" type="password" placeholder="Password">
+			</fieldset>
+
+			<!-- AMOUNT -->
+			<fieldset class="form-group">
+				<label for="amount">Amount (AUD)</label>
+					<div class="input-group">
+						<div class="input-group-addon">$</div>
+							<input type="number" class="form-control" id="amount" placeholder="Amount">
+						<div class="input-group-addon">.00</div>
+					</div>
+					<small class="error">Must be numerical.</small>
+			</fieldset>
+
+			<!-- SELECT -->
+			<fieldset class="form-group">
+				<label for="example-select">Example select</label>
+				<select class="form-control" id="example-select">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+				<small class="error">There was an error.</small>
+			</fieldset>
+
+			<!-- TEXT AREA -->
+			<fieldset class="form-group">
+				<label for="message">Example textarea</label>
+				<textarea class="form-control" id="message" rows="3" required></textarea>
+				<small class="error">A message is required.</small>
+			</fieldset>
+
+			<!-- FILE INPUT -->
+			<fieldset class="form-group">
+				<label for="file-input">File input</label>
+				<input type="file" class="form-control-file" id="file-input">
+				<small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+			</fieldset>
+
+			<!-- RADIO -->
+			<div class="radio">
+				<label>
+					<input type="radio" name="radio-group-1" value="Option 1" checked>
+					Option one is this and that&mdash;be sure to include why it's great
+				</label>
+			</div>
+
+			<!-- RADIO -->
+			<div class="radio">
+				<label>
+					<input type="radio" name="radio-group-1" value="Option 2">
+					Option two can be something else and selecting it will deselect option one
+				</label>
+			</div>
+
+			<!-- RADIO DISABLED -->
+			<div class="radio disabled">
+				<label>
+					<input type="radio" name="radio-group-1" value="Option 3" disabled>
+					Option three is disabled
+				</label>
+			</div>
+
+			<!-- CHECKBOX -->
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+
+			<!-- SUBMIT -->
+			<button type="submit" class="btn btn-primary btn-text">Submit Payment <i class="fa fa-angle-right"></i></button>
+
+		</form>
+    </div>
+</div>
 		</div>
+
 	</div>
-</a>
-			</li>
-		
-			<li class="col-md-4 col-lg-4">
-				<a class="card-anchor" href="/about/clubs-sa-staff-and-board/">
-	<div class="card card-minimal">
-		<div class="card-head">
-			<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="Clubs SA Staff & Board">
-			<span class="pull-right btn btn-primary"><i class="fa fa-angle-right"></i></span>
-		</div>
-		<div class="card-block" data-match-height>
-			<h3 class="card-title">Clubs SA Staff & Board</h3>
-
-			
-
-		</div>
-	</div>
-</a>
-			</li>
-		
-			<li class="col-md-4 col-lg-4">
-				<a class="card-anchor" href="#">
-	<div class="card card-minimal">
-		<div class="card-head">
-			<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="Publications and Submissions">
-			<span class="pull-right btn btn-primary"><i class="fa fa-angle-right"></i></span>
-		</div>
-		<div class="card-block" data-match-height>
-			<h3 class="card-title">Publications and Submissions</h3>
-
-			
-
-		</div>
-	</div>
-</a>
-			</li>
-		
-			<li class="col-md-4 col-lg-4">
-				<a class="card-anchor" href="#">
-	<div class="card card-minimal">
-		<div class="card-head">
-			<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="Club Safe">
-			<span class="pull-right btn btn-primary"><i class="fa fa-angle-right"></i></span>
-		</div>
-		<div class="card-block" data-match-height>
-			<h3 class="card-title">Club Safe</h3>
-
-			
-
-		</div>
-	</div>
-</a>
-			</li>
-		
-			<li class="col-md-4 col-lg-4">
-				<a class="card-anchor" href="#">
-	<div class="card card-minimal">
-		<div class="card-head">
-			<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="Training">
-			<span class="pull-right btn btn-primary"><i class="fa fa-angle-right"></i></span>
-		</div>
-		<div class="card-block" data-match-height>
-			<h3 class="card-title">Training</h3>
-
-			
-
-		</div>
-	</div>
-</a>
-			</li>
-		
-			<li class="col-md-4 col-lg-4">
-				<a class="card-anchor" href="/about/funding/">
-	<div class="card card-minimal">
-		<div class="card-head">
-			<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="Funding">
-			<span class="pull-right btn btn-primary"><i class="fa fa-angle-right"></i></span>
-		</div>
-		<div class="card-block" data-match-height>
-			<h3 class="card-title">Funding</h3>
-
-			
-
-		</div>
-	</div>
-</a>
-			</li>
-		
-			<li class="col-md-4 col-lg-4">
-				<a class="card-anchor" href="/about/find-a-club/">
-	<div class="card card-minimal">
-		<div class="card-head">
-			<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="Find A Club">
-			<span class="pull-right btn btn-primary"><i class="fa fa-angle-right"></i></span>
-		</div>
-		<div class="card-block" data-match-height>
-			<h3 class="card-title">Find A Club</h3>
-
-			
-
-		</div>
-	</div>
-</a>
-			</li>
-		
-			<li class="col-md-4 col-lg-4">
-				<a class="card-anchor" href="#">
-	<div class="card card-minimal">
-		<div class="card-head">
-			<img width="100%" class="card-img-top" src="http://placehold.it/400x300" alt="Contact Us">
-			<span class="pull-right btn btn-primary"><i class="fa fa-angle-right"></i></span>
-		</div>
-		<div class="card-block" data-match-height>
-			<h3 class="card-title">Contact Us</h3>
-
-			
-
-		</div>
-	</div>
-</a>
-			</li>
-		
-	</ul>
-
 </div>
 
 </section>
@@ -744,7 +723,7 @@
 	
 	
 	
-	<li class="theme-2 active  has-dropdown  ">
+	<li class="theme-2 has-dropdown  ">
 
 		
 		
@@ -836,7 +815,7 @@
 	</li>
 	
 	
-	<li class="theme-3 has-dropdown  ">
+	<li class="theme-3 active  has-dropdown  ">
 
 		
 		
