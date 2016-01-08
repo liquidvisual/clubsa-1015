@@ -284,7 +284,7 @@
 		padding-right: 40px;
 	}
 
-	input {
+	input, textarea, select {
 		background: rgba(white, 0.8);
 	}
 
@@ -317,7 +317,7 @@
 .card-quaternary {
 	background: $quaternary-color;
 
-	input {
+	input, textarea {
 		border-color: darken($quaternary-color, 14%) !important;
 	}
 
@@ -334,7 +334,7 @@
 .card-tertiary {
 	background: $tertiary-color;
 
-	input {
+	input, textarea {
 		border-color: darken($tertiary-color, 14%) !important;
 	}
 
@@ -351,7 +351,7 @@
 .card-senary {
 	background: $senary-color;
 
-	input {
+	input, textarea {
 		border-color: darken($senary-color, 14%) !important;
 	}
 

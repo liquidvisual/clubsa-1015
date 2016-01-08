@@ -42,7 +42,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="topbar">
-                                {% include snippets/navigation.html %}
+                                {% include navigation_with_search.html %}
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
 
     <!-- OFF-CANVAS MENU -->
     <nav class="off-canvas-menu" data-off-canvas-menu aria-hidden="true">
-        {% include snippets/navigation.html %}
+        {% include navigation_with_search.html %}
     </nav>
 
     <!--[if lt IE 9]>
@@ -85,6 +85,9 @@
     <script src="/scripts/liquidvisual/equal-height.js"></script>
     <script src="/scripts/liquidvisual/hero.js"></script>
     <script src="/scripts/liquidvisual/utilities.js"></script>
+
+    <script src="/scripts/vendor/bootstrap-validator.js"></script>
+
     <script src="/scripts/main.js"></script>
     <!-- endbuild -->
 
@@ -93,6 +96,7 @@
     {% endif %}
 
     {% comment %}
+        <script src="/scripts/vendor/H5F.js"></script>
         <script src="/_bower_components/jquery-placeholder/jquery.placeholder.js"></script>
         <script src="/_bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="/_bower_components/slick.js/slick/slick.js"></script>

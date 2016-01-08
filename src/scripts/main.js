@@ -15,6 +15,8 @@ $(document).ready(function() {
 
 $(window).load(function() {
     NProgress.done();
+
+    // H5F.setup(document.getElementById("form")); // Patch IE9 for form validation
 });
 
 //-----------------------------------------------------------------

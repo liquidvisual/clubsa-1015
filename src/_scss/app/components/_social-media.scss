@@ -1,7 +1,7 @@
 /*
     SOCIAL-MEDIA.CSS
 
-    - Last updated: 00.00.00
+    - Last updated: 07.01.16
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -37,6 +37,19 @@
 			    background: lighten($tertiary-color, 10%);
 			}
 		}
+	}
+}
+
+.off-canvas-menu .social-media {
+	float: left;
+
+	a {
+		background: white;
+		color: #375A99 !important;
+	}
+
+	.twitter {
+		color: #07ACEE !important;
 	}
 }
 
