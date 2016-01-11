@@ -109,6 +109,13 @@ textarea {
 	.input-group-addon {
 		border: 1px solid #B04518;
 	}
+}
+
+//-----------------------------------------------------------------
+// Basic Form (Special Case)
+//-----------------------------------------------------------------
+
+.card-inverse form[data-toggle="validator"] {
 
 	.input-group .form-control {
 		border-right: 0;
