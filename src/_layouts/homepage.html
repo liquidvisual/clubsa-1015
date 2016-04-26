@@ -1,0 +1,49 @@
+---
+layout: master
+---
+
+{% assign settings = site.data.settings %}
+{% assign articles = site.data.articles %}
+
+<!-- HERO -->
+{% include hero.html %}
+
+<!-- STAGE -->
+<section class="stage">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 pad-right-xl">
+
+				<!-- NEWS CARDS -->
+				<ul class="cards-collapse-xs block-grid-xs-1 block-grid-md-2 block-grid-xl-3">
+					{% for item in articles | limit: 6 %}
+						<li class="col-md-4 col-lg-4">
+							{% include components/card.html %}
+						</li>
+					{% endfor %}
+				</ul>
+
+				<div class="spacer m-b-md"></div>
+
+			</div>
+			<div class="col-lg-4">
+
+				<!-- EVENTS CARDS -->
+				{% for item in articles | limit: 3 %}
+					{% include components/card_slim.html %}
+				{% endfor %}
+
+				<div class="spacer m-b-md"></div>
+
+				<!-- COLORED CARDS -->
+				{% include components/color_cards.html %}
+			</div>
+		</div>
+	</div>
+
+	<div class="spacer m-b hidden-md-up"></div>
+
+	<!-- PARTNERS -->
+	{% include components/partners.html %}
+</section>

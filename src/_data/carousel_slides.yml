@@ -1,0 +1,14 @@
+- title: "Far West Regional Meetings"
+  body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."
+  url: /
+  image: "/img/content/hero-1.jpg"
+
+- title: "Seize the Day"
+  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum libero."
+  url: /
+  image: "/img/content/hero-2.png"
+
+- title: "Your Time is Now"
+  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum"
+  url: /
+  image: "/img/content/hero-3.png"

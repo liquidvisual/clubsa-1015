@@ -1,0 +1,355 @@
+/*
+    THEMES.CSS
+
+    - Last updated: 29.10.15
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Theme 1
+//-----------------------------------------------------------------
+//=========================================
+// CARD HOVER - BTN - only for component library - rest will override it
+//=========================================
+
+.card-anchor:hover .btn {
+	@include media-breakpoint-up(xl) {
+	    background: darken($senary-color, 10%);
+	    border-color: darken($senary-color, 10%);
+	    i { color: white; }
+	}
+}
+
+//=========================================
+// GLOBAL NAV
+//=========================================
+
+.global-navigation .theme-1 {
+	.top-parent-anchor {
+		background: $secondary-color;
+
+		&:hover {
+			background: lighten($secondary-color, 10%);
+		}
+	}
+
+	.dropdown a:hover {
+		background: darken($secondary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
+	.dropdown {
+		background: lighten($secondary-color, 10%);
+	}
+}
+
+//-----------------------------------------------------------------
+// Theme 2
+//-----------------------------------------------------------------
+
+.theme-2 .btn-primary {
+	background: $tertiary-color;
+	border-color: $tertiary-color;
+}
+
+//=========================================
+// TEXT LINKS
+//=========================================
+
+.theme-2 .stage a:not(.btn) {
+	color: $tertiary-color;
+
+	&:hover {
+		color: darken($tertiary-color, 10%);
+	}
+}
+
+//=========================================
+// CARD HOVER - BTN
+//=========================================
+
+.theme-2 .card-anchor:hover .btn,
+.theme-2 .btn:hover {
+	@include media-breakpoint-up(xl) {
+	    background: darken($tertiary-color, 10%);
+	    border-color: darken($tertiary-color, 10%);
+	    i { color: white; }
+	}
+}
+
+//=========================================
+// GLOBAL NAV
+//=========================================
+
+.theme-2 .global-navigation {
+	border-color: $tertiary-color;
+}
+
+.global-navigation .theme-2 {
+	.top-parent-anchor {
+		background: $tertiary-color;
+
+		&:hover {
+			background: lighten($tertiary-color, 10%);
+		}
+	}
+
+	.dropdown a:hover {
+		background: darken($tertiary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
+	.dropdown {
+		background: lighten($tertiary-color, 10%);
+	}
+}
+
+//-----------------------------------------------------------------
+// Theme 3
+//-----------------------------------------------------------------
+
+.theme-3 .btn-primary {
+	background: $quaternary-color;
+	border-color: $quaternary-color;
+}
+
+//=========================================
+// TEXT LINKS
+//=========================================
+
+.theme-3 .stage a:not(.btn) {
+	color: $quaternary-color;
+
+	&:hover {
+		color: darken($quaternary-color, 10%);
+	}
+}
+
+//=========================================
+// CARD HOVER - BTN
+//=========================================
+
+.theme-3 .card-anchor:hover .btn,
+.theme-3 .btn:hover {
+	@include media-breakpoint-up(xl) {
+	    background: darken($quaternary-color, 10%);
+	    border-color: darken($quaternary-color, 10%);
+	    i { color: white; }
+	}
+}
+
+//=========================================
+// GLOBAL NAV
+//=========================================
+
+.theme-3 .global-navigation {
+	border-color: $quaternary-color;
+}
+
+.global-navigation .theme-3 {
+	.top-parent-anchor {
+		background: $quaternary-color;
+
+		&:hover {
+			background: lighten($quaternary-color, 10%);
+		}
+	}
+
+	.dropdown a:hover {
+		background: darken($quaternary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
+	.dropdown {
+		background: lighten($quaternary-color, 10%);
+	}
+}
+
+//-----------------------------------------------------------------
+// Theme 4
+//-----------------------------------------------------------------
+
+.theme-4 .btn-primary {
+	background: $quinary-color;
+	border-color: $quinary-color;
+}
+
+//=========================================
+// TEXT LINKS
+//=========================================
+
+.theme-4 .stage a:not(.btn) {
+	color: $quinary-color;
+
+	&:hover {
+		color: darken($quinary-color, 10%);
+	}
+}
+
+//=========================================
+// CARD HOVER - BTN
+//=========================================
+
+.theme-4 .card-anchor:hover .btn,
+.theme-4 .btn:hover {
+	@include media-breakpoint-up(xl) {
+	    background: darken($quinary-color, 10%);
+	    border-color: darken($quinary-color, 10%);
+	    i { color: white; }
+	}
+}
+
+//=========================================
+// GLOBAL NAV
+//=========================================
+
+.theme-4 .global-navigation {
+	border-color: $quinary-color;
+}
+
+.global-navigation .theme-4 {
+	.top-parent-anchor {
+		background: $quinary-color;
+
+		&:hover {
+			background: lighten($quinary-color, 10%);
+		}
+	}
+
+	.dropdown a:hover {
+		background: darken($quinary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
+	.dropdown {
+		background: lighten($quinary-color, 10%);
+	}
+}
+
+//-----------------------------------------------------------------
+// Theme 5
+//-----------------------------------------------------------------
+
+.theme-5 .btn-primary {
+	background: $senary-color;
+	border-color: $senary-color;
+}
+
+//=========================================
+// TEXT LINKS
+//=========================================
+
+.theme-5 .stage a:not(.btn) {
+	color: $senary-color;
+
+	&:hover {
+		color: darken($senary-color, 10%);
+	}
+}
+
+//=========================================
+// CARD HOVER - BTN
+//=========================================
+
+.theme-5 .card-anchor:hover .btn,
+.theme-5 .btn:hover {
+	@include media-breakpoint-up(xl) {
+	    background: darken($senary-color, 10%);
+	    border-color: darken($senary-color, 10%);
+	    i { color: white; }
+	}
+}
+
+//=========================================
+// GLOBAL NAV
+//=========================================
+
+.theme-5 .global-navigation {
+	border-color: $senary-color;
+}
+
+.global-navigation .theme-5 {
+	.top-parent-anchor {
+		background: $senary-color;
+
+		&:hover {
+			background: lighten($senary-color, 10%);
+		}
+	}
+
+	.dropdown a:hover {
+		background: darken($senary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
+	.dropdown {
+		background: lighten($senary-color, 10%);
+	}
+}
+
+//-----------------------------------------------------------------
+// Theme 6
+//-----------------------------------------------------------------
+
+.theme-6 .btn-primary {
+	background: $septenary-color;
+	border-color: $septenary-color;
+}
+
+//=========================================
+// TEXT LINKS
+//=========================================
+
+.theme-6 .stage a:not(.btn) {
+	color: $septenary-color;
+
+	&:hover {
+		color: darken($septenary-color, 10%);
+	}
+}
+
+//=========================================
+// CARD HOVER - BTN
+//=========================================
+
+.theme-6 .card-anchor:hover .btn,
+.theme-6 .btn:hover {
+	@include media-breakpoint-up(xl) {
+	    background: darken($septenary-color, 10%);
+	    border-color: darken($septenary-color, 10%);
+	    i { color: white; }
+	}
+}
+
+//=========================================
+// GLOBAL NAV
+//=========================================
+
+.theme-6 .global-navigation {
+	border-color: $septenary-color;
+}
+
+.global-navigation .theme-6 {
+	.top-parent-anchor {
+		background: $septenary-color;
+
+		&:hover {
+			background: lighten($septenary-color, 10%);
+		}
+	}
+
+	.dropdown a:hover {
+		background: darken($septenary-color, 5%);
+	}
+
+	&.has-dropdown:hover > .top-parent-anchor,
+	.dropdown {
+		background: lighten($septenary-color, 10%);
+	}
+}
+
+//=========================================
+//
+//=========================================
