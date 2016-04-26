@@ -311,56 +311,7 @@
 }
 
 //=========================================
-// Card Muted
-//=========================================
-
-.card-muted {
-	background: #E7E7E7;
-
-	.card-text {
-		color: $body-color;
-		padding: rem-calc(0 0 0 5);
-
-		@include media-breakpoint-up(xl) {
-		    padding: rem-calc(0 70 0 10);
-		}
-	}
-
-	img {
-		@include media-breakpoint-down(lg) {
-		    width: rem-calc(90);
-		}
-	}
-
-	.btn {
-		position: absolute;
-		right: rem-calc(15);
-		bottom: rem-calc(15);
-
-		@include media-breakpoint-only(lg) {
-		    position: static;
-		}
-
-		@include media-breakpoint-up(xl) {
-
-		}
-	}
-
-	input, textarea {
-		border-color: darken($quaternary-color, 14%) !important;
-	}
-
-	.btn {
-		background: darken($quaternary-color, 10%) !important;
-
-		&:hover {
-			background: darken($quaternary-color, 15%) !important;
-		}
-	}
-}
-
-//=========================================
-// Card Quaternary
+//
 //=========================================
 
 .card-quaternary {
@@ -379,8 +330,6 @@
 	}
 }
 //=========================================
-// Card Tertiary
-//=========================================
 
 .card-tertiary {
 	background: $tertiary-color;
@@ -397,8 +346,6 @@
 		}
 	}
 }
-//=========================================
-// Card Senary
 //=========================================
 
 .card-senary {
