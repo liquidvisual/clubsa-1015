@@ -1,7 +1,7 @@
 /*
     FORMS.CSS
 
-    - Last updated: 18.03.16
+    - Last updated: 07.01.16
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -15,42 +15,122 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea {
-	-webkit-appearance: none; // removes shadow on iOS
+	-webkit-appearance: none; // removes shadow
 }
 
 //-----------------------------------------------------------------
-// Bootstrap Validation
-//
-// http://1000hz.github.io/bootstrap-validator/#validator-events
+// Validation
 //-----------------------------------------------------------------
 
-form[data-toggle="validator"] .error {
+.error {
 	display: none;
-	width: 100%;
-	padding: rem-calc(5 10);
 	background: $brand-danger;
+	width: 100%;
 	color: white;
+	padding: rem-calc(5 10);
 }
 
-form[data-toggle="validator"] .has-error > .form-control {
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-}
-
-form[data-toggle="validator"] .has-error > .error {
+.has-error > .error {
 	display: block;
 }
 
 //-----------------------------------------------------------------
-// Search Form Off Canvas
+// Clubs Specific - built into desktop nav bar
 //-----------------------------------------------------------------
 
-// .off-canvas-menu .search-form {
-// 	::-webkit-input-placeholder { color: white; opacity: 1; }
-// 	:-ms-input-placeholder { color: white; opacity: 1; }
-// 	::-moz-placeholder { color: white; opacity: 1; }
-// 	:-moz-placeholder { color: white; opacity: 1; }
-// }
+.search-form {
+	display: none; // strictly opt in
+    float: left;
+    border: 0;
+
+    input {
+        height: $lv-nav-height;
+        color: white;
+        width: rem-calc(450);
+        border: 0;
+
+        font-size: rem-calc(13);
+        font-weight: 700;
+
+        background: transparent url(../img/ui/fa-search.svg) no-repeat center left;
+        background-size: 16px;
+        padding-left: 22px;
+    }
+
+    ::-webkit-input-placeholder { color: white; opacity: 1; }
+    :-ms-input-placeholder { color: white; opacity: 1; }
+    ::-moz-placeholder { color: white; opacity: 1; }
+    :-moz-placeholder { color: white; opacity: 1; }
+}
+
+// Show for navigation block
+
+.global-navigation .search-form {
+	display: block;
+}
+
+//-----------------------------------------------------------------
+// Off Canvas Form
+//-----------------------------------------------------------------
+
+.off-canvas-menu .search-form {
+	display: block;
+	float: right;
+
+	input {
+		width: rem-calc(200);
+		height: 36px;
+		padding-right: 24px;
+		background: transparent url(../img/ui/fa-search.svg) no-repeat center right;
+		background-size: 18px;
+		font-size: rem-calc(18);
+		font-weight: normal;
+		text-align: right;
+
+		@include media-breakpoint-up(sm) {
+		    width: 100%;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Form Inside Card (orange)
+//-----------------------------------------------------------------
+
+.card-inverse form {
+	label {
+		color: white;
+	}
+
+	.text-muted {
+		color: #eee;
+	}
+
+	.input-group-addon {
+		border: 1px solid #B04518;
+	}
+}
+
+//-----------------------------------------------------------------
+// Basic Form (Special Case)
+//-----------------------------------------------------------------
+
+.card-inverse form[data-toggle="validator"] {
+
+	.input-group .form-control {
+		border-right: 0;
+		border-left: 0;
+	}
+
+	.btn {
+		background: $quaternary-color !important;
+		padding: rem-calc(10 15);
+
+		&:hover {
+			background: darken($quaternary-color, 5%) !important;
+		}
+	}
+}
 
 //=========================================
 //

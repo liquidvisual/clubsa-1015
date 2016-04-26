@@ -1,12 +1,9 @@
 /*
     MIXINS.CSS
 
-    - updated: 16.03.16
+    - updated: 09.10.15
     - liquidvisual.com
 */
-//-----------------------------------------------------------------
-// Variables
-//-----------------------------------------------------------------
 //-----------------------------------------------------------------
 // Mixins
 //-----------------------------------------------------------------
@@ -25,9 +22,36 @@
             transition-property: $property;
 }
 
-//-----------------------------------------------------------------
-//
-//-----------------------------------------------------------------
 //=========================================
-//
+// Hamburger
 //=========================================
+
+// @mixin hamburger($width: 24px, $gap: 4px, $thickness: 4px, $color: black) {
+//     display: block;
+//     height: ($thickness + $gap) * 2;
+//     cursor: pointer;
+
+//     .hamburger-icon,
+//     &:after {
+//         position: relative;
+//         display: block;
+//         width: $width;
+//         height: $thickness;
+//         background: $color;
+//     }
+
+//     &:after {
+//         content: "";
+//         top: $gap;
+//         box-shadow: 0 $thickness+$gap 0 0 $color;
+//     }
+// }
+
+// html.mm-opening .hamburger:before,
+// html.mm-opening .hamburger:after {
+//     display: none;
+// }
+
+// .hamburger {
+//     @include hamburger();
+// }

@@ -1,18 +1,17 @@
 /*
     HERO.CSS
 
-    - updated: 18.03.16
+    - updated: 29.10.15
     - notes:
         * liquidvisual recommends bxSlider for hero carousels
-        * fixed overflow problem when removing JS
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
 
-$hero-height-small:           auto; //rem-calc(266); // default: auto // IMPORTANT: if carousel slides, you need a fixed height
+$hero-height-small:           auto; // IMPORTANT: if carousel slides, you need a fixed height
 $hero-height-medium:          rem-calc(570);
-$hero-height-medium-fixed:    rem-calc(286);
+$hero-height-medium-fixed:    rem-calc(300);
 $hero-height-large:           rem-calc(750); //rem-calc(570);
 $hero-carousel-bullet-size:   rem-calc(16);
 
@@ -33,8 +32,7 @@ $hero-carousel-bullet-size:   rem-calc(16);
 //-----------------------------------------------------------------
 
 .lv-hero {
-    width: 100%; // added last minute - breaking?
-    overflow: hidden; // causes problems without JS
+    overflow: hidden;
     height: $hero-height-small;
 
     @include media-breakpoint-up(md) {

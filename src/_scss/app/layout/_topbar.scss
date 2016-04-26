@@ -1,44 +1,36 @@
 /*
     TOPBAR.CSS
 
-    - Last updated: 27.01.16
+    - Last updated: 20.10.15
     - liquidvisual.com
-    - Updated dropdowns to be more reliable
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
 
-$primary-color                 : $brand-primary;
-$secondary-color               : #eee !default;
-$top-parent-anchor-bg-color    : $primary-color !default;
 $global-radius                 : 0 !default;
-$lv-nav-padding                : 15px !default;
-$lv-nav-height                 : 44px !default;
+$lv-nav-padding                : 40px !default;
+$lv-nav-height                 : 58px !default;
+$secondary-color               : #eee !default;
+$top-parent-anchor-bg-color    : $secondary-color !default;
 $topbar-align                  : right !default; // Fluid, Right, Left
-$dropdowns-have-anchor-borders : true !default;
+$dropdowns-have-anchor-borders : false !default;
 
 //-----------------------------------------------------------------
 // Navigation
-//
-// If BG navigation is desired. Make nav absolute, and topbar relative
 //-----------------------------------------------------------------
 
 .global-navigation {
-    position: relative; // locked
+    position: absolute; // locked
+    width: 100%;
+    top: $header-height-lg;
+    background: $primary-color;
     z-index: 9999;
+    border-bottom: 10px solid #5D784B;
 }
 
-//-----------------------------------------------------------------
-// Topbar
-//-----------------------------------------------------------------
-
-.topbar {
-    position: absolute; // locked
-    width: 100%; // locked
-    left: 0; // locked
-    bottom: 0;
-    background: aqua;
+.header-is-fixed .global-navigation {
+    // top: rem-calc(60);
 }
 
 //-----------------------------------------------------------------
@@ -50,9 +42,8 @@ $dropdowns-have-anchor-borders : true !default;
     margin: 0; // reset
     padding: 0; // reset
     text-transform: uppercase;
-    font-family: $font-family-sans-serif;
-    font-size: rem-calc(14);
-    font-weight: 600;
+    font-size: rem-calc(13);
+    font-weight: 700;
 }
 
 //=========================================
@@ -95,7 +86,7 @@ $dropdowns-have-anchor-borders : true !default;
     @include transition('background-color');
     display: block; // locked
     padding: rem-calc(10 15);
-    // color: white;
+    color: white;
 }
 
 //-----------------------------------------------------------------
@@ -106,18 +97,13 @@ $dropdowns-have-anchor-borders : true !default;
     display: block; // locked
     padding: rem-calc(0 $lv-nav-padding);
     line-height: rem-calc($lv-nav-height);
-    // background: $top-parent-anchor-bg-color;
-    color: #4E4E4E;
+    background: $top-parent-anchor-bg-color;
+    color: white;
     cursor: pointer;
 
     &:hover {
-        background: $primary-color; //lighten($top-parent-anchor-bg-color, 10%);
+        background: lighten($top-parent-anchor-bg-color, 10%);
         color: white;
-    }
-
-    // Optional
-    &:hover > .text {
-        border-bottom: none !important;
     }
 }
 
@@ -125,11 +111,9 @@ $dropdowns-have-anchor-borders : true !default;
 // Active Top Parent Anchor
 //=========================================
 
-.topbar .active .top-parent-anchor .text {
-    // background: $primary-color; // optional
-    border-bottom: 3px solid #E0E0E0;
-    padding-bottom: 2px;
-}
+// .topbar .active .top-parent-anchor {
+//     background: $primary-color; // optional
+// }
 
 //-----------------------------------------------------------------
 // Dropdown Anchors
@@ -137,20 +121,14 @@ $dropdowns-have-anchor-borders : true !default;
 
 .topbar .has-dropdown:hover > .top-parent-anchor {
     background: $top-parent-anchor-bg-color;
-    color: white;
-}
-
-.topbar .active.has-dropdown:hover > .top-parent-anchor .text {
-    border-bottom: 0;
 }
 
 // UX decision, dropdowns are fiddly on tablets
 .topbar .has-dropdown:hover > .dropdown {
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(lg) {
         opacity: 1;
         height: auto;
         overflow: visible;
-        visibility: visible;
     }
 }
 
@@ -170,7 +148,6 @@ $dropdowns-have-anchor-borders : true !default;
     @include media-breakpoint-up(md) {
         opacity: 1;
         height: auto;
-        visibility: visible;
     }
 }
 
@@ -189,17 +166,12 @@ $dropdowns-have-anchor-borders : true !default;
     top: auto;
     left: 0;
     width: rem-calc(240);
-    // background: lighten($brand-primary, 12%);
-    background: white;
+    background: lighten($secondary-color, 10%);
     border-radius: 0 0 $global-radius $global-radius;
-    // border-top: 4px solid $primary-color;
-    // box-shadow: 0 1px 1px 0px rgba(0,0,0,.2);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    visibility: hidden;
 }
 
 // Prevent far-right dropdown from exceeding page width
-.topbar .right-align .dropdown {
+.topbar .last-child .dropdown {
     right: 0;
     left: auto;
 }
@@ -215,7 +187,7 @@ $dropdowns-have-anchor-borders : true !default;
 }
 
 // Prevent far-right 'nested' dropdown from exceeding page width
-.topbar .right-align .dropdown .dropdown {
+.topbar .last-child .dropdown .dropdown {
     left: -100%;
 }
 
@@ -231,9 +203,7 @@ $dropdowns-have-anchor-borders : true !default;
     a {
         transition: none; // UX decision
         font-size: rem-calc(13); // opinionated
-        // color: white;
-        color: #444;
-        padding: rem-calc(15 15);
+        color: white;
     }
 }
 
@@ -243,12 +213,7 @@ $dropdowns-have-anchor-borders : true !default;
 
 @if $dropdowns-have-anchor-borders {
     .topbar .dropdown a {
-        border-bottom: 1px solid #E8E8E8; //darken($primary-color, 2%); // optional
-        // border-top: 1px solid lighten($primary-color, 0%); // optional
-    }
-
-    .topbar .dropdown {
-        // border-bottom: 1px solid darken($primary-color, 5%); // optional
+        border-bottom: 1px solid darken(#eee, 8%); // optional
     }
 
     .topbar .dropdown li:last-child a {
@@ -261,9 +226,8 @@ $dropdowns-have-anchor-borders : true !default;
 //=========================================
 
 .topbar .dropdown a:hover {
-    background: #eee;
-    // background: lighten($primary-color, 2%); //#eee;
-    // color: white;
+    background: $secondary-color; //#eee;
+    color: white;
 }
 
 //=========================================

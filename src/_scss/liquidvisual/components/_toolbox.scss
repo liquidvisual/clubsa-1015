@@ -1,16 +1,26 @@
 /*
 	TOOLBOX.CSS
 
-	- updated: 18.03.16
+	- updated: 14.10.15
 	- liquidvisual.com
+
+	- This file features specific additions and overrides to
+	  Foundation's framework that help liquidvisual sites have
+	  their own unique feel and behavior.
+
+	  remove soon: Code: background-color: #DAE0E7;
+				border-radius: 3px;
+				padding: 2px 4px;
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
 
-$font-smoothing:           antialiased !default;
-$primary-color:            $brand-primary !default;
+$font-smoothing: antialiased !default; // Override in F5 settings
+$primary-color: #008CBA !default; // Override in F5 settings
 $include-developer-styles: true !default;
+$include-example-styles: true !default;
+$include-form-styles: true !default;
 
 //-----------------------------------------------------------------
 // Font Smoothing
@@ -44,23 +54,43 @@ $include-developer-styles: true !default;
 // Example Text
 //-----------------------------------------------------------------
 
-.lv-example {
-	padding: 1.250em;
-	border: 1px dashed #CFCCCF;
-	margin-bottom: 1.875em;
-	background: white;
-	box-shadow: 0 3px 5px -4px rgba(0, 0, 0, 0.26);
-}
-
-//-----------------------------------------------------------------
-// Google Map
-//-----------------------------------------------------------------
-
-.lv-google-map {
-	@media (max-width: 1024px) { // tablet
-		pointer-events: none;
+@if $include-example-styles {
+	.example {
+		border: 1px dashed #CFCCCF;
+		box-shadow: 0 3px 5px -4px rgba(0, 0, 0, 0.26);
+		padding: 1.250em;
+		margin-bottom: 1.875em;
+		background: white;
 	}
 }
+
+//-----------------------------------------------------------------
+// Forms
+//-----------------------------------------------------------------
+
+// Lingering outlines look weird in Foundation.
+// @todo: Need to solve accessibility concern.
+
+@if $include-form-styles {
+	select {
+		outline: none;
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNmZWZlZmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjRmNGY0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	}
+}
+
+//-----------------------------------------------------------------
+// Tables
+//-----------------------------------------------------------------
+
+// 	table {
+// 		width: 100%;
+// 		border-collapse: collapse;
+// 	}
+
+// 	table thead,
+// 	table tfoot {
+// 		border-bottom: 2px solid #555 !default;
+// 	}
 
 //-----------------------------------------------------------------
 // Helper Classes
@@ -81,18 +111,15 @@ $include-developer-styles: true !default;
 	vertical-align: middle;
 }
 
-.align-top,
-.v-align-top {
+.align-top {
 	vertical-align: top;
 }
 
-.align-bottom,
-.v-align-bottom {
+.align-bottom {
 	vertical-align: bottom;
 }
 
-.align-middle,
-.v-align-middle {
+.align-middle {
 	vertical-align: middle;
 }
 
@@ -114,11 +141,9 @@ $include-developer-styles: true !default;
 .lv-dropcap:first-letter {
 	float: left;
 	color: $primary-color;
-	font-size: 100px;
-	line-height: 90px;
-	padding-top: 4px;
-	padding-right: 10px;
-	padding-left: 3px;
+	font-size: 6.250em;
+	line-height: 5.000em;
+	padding-right: 0.625em;
 }
 
 //=========================================
@@ -143,12 +168,20 @@ $include-developer-styles: true !default;
 //-----------------------------------------------------------------
 
 @if $include-developer-styles {
+	// Foundation
 	.developer .row:nth-child(odd) { background-color: #6AE1CC !important; }
 	.developer .row:nth-child(even),
 	.developer > .row:nth-child(odd) { background-color: #61CFBC !important; }
-	.developer .columns { background-color: #46B0FB !important; border-right: 1px solid white; }
-	.developer [class^='col-'] { background-color: #46B0FB !important; border: 1px dashed white; }
+	.developer .columns { background-color: #46B0FB !important; }
 	.developer hr { border-bottom: 1px solid yellow !important; }
+
+	// Bootstrap
+	.developer .container:nth-child(odd) { background-color: #6AE1CC !important; }
+	.developer .container:nth-child(even),
+	.developer > .container:nth-child(odd) { background-color: #61CFBC !important; }
+	.developer [class^='col-'] { background-color: #46B0FB !important; }
+	.developer hr,
+	.developer .spacer { border-bottom: 1px solid yellow !important; }
 
 	body .fill-1 { background-color: #E94144; }
 	body .fill-2 { background-color: #46B0FB; }

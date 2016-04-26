@@ -1,82 +1,72 @@
 /*
     TEXT-EDITOR.CSS
 
-    - Last updated: 16.03.16
+    - Last updated: 20.04.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
-// Variables
-//-----------------------------------------------------------------
-//-----------------------------------------------------------------
-// Image Alignment
+// Text Editor Classes
 //-----------------------------------------------------------------
 
-.img-left {
-	margin-bottom: rem-calc(30);
-
-	@include media-breakpoint-down(sm) {
-	    width: 100%;
-	}
-
-	@include media-breakpoint-up(md) {
-	    float: left;
-	    margin: rem-calc(30 30 0 0);
-	}
-}
-
-.img-right {
-	margin-bottom: rem-calc(30);
-
-	@include media-breakpoint-down(sm) {
-	    width: 100%;
-	}
-
-	@include media-breakpoint-up(md) {
+.image-right {
+	@include media-breakpoint-up(lg) {
 	    float: right;
 	    margin: rem-calc(0 0 30 30);
 	}
 }
 
+.image-left {
+	@include media-breakpoint-up(lg) {
+	    float: left;
+	    margin: rem-calc(30 30 0 0);
+	}
+}
+
 //-----------------------------------------------------------------
-// Styled Lists
+// Document Button
 //-----------------------------------------------------------------
 
-.styled-list {
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0;
+.btn-document a,
+.document-link a {
+	@extend .btn;
+	@extend .btn-primary;
+	@extend .btn-text;
 
-	li {
-		padding-left: rem-calc(8);
-		margin-bottom: rem-calc(5);
+	position: relative;
+	text-align: left;
+	margin-bottom: rem-calc(5);
+	width: 100%;
+	padding-left: 36px;
+	padding-right: 40px;
+	overflow: hidden;
+	color: white !important; // override theme
 
-		a:before {
-			content: "\f0da";
-			// content: "\f04b";
-			font-family: "FontAwesome";
-			position: relative;
-			top: 1px;
-			left: -5px;
-			font-size: rem-calc(17);
-			color: $primary-color;
+	&:before,
+	&:after {
+	    position: absolute;
+	    font-family: 'FontAwesome';
+	}
+
+	&:before {
+	    content: "\f15b";
+	    top: 9px;
+	    left: 15px;
+	    font-size: rem-calc(16);
+	}
+
+	&:after {
+	    content: "\f105";
+	    top: 3px;
+	    right: 10px;
+	    font-size: rem-calc(24);
+	    color: rgba(white, 0.6); // same as btn
+	}
+
+	&:hover:after {
+		@include media-breakpoint-up(xl) {
+		    color: white;
 		}
 	}
-
-	&[class*='block-grid'] li {
-		padding-bottom: 0; // Let list items set their own inner padding
-	}
-}
-
-//-----------------------------------------------------------------
-// Font Families
-//-----------------------------------------------------------------
-
-.font-family-serif {
-	font-family: $font-family-serif;
-}
-
-.font-family-sans-serif {
-	font-family: $font-family-sans-serif;
 }
 
 //=========================================

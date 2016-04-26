@@ -1,117 +1,117 @@
-# A Typical Sitemap structure
-
 - title: Home
   url: /
+  theme: theme-1
 
 - title: About
   url: /about/
+  theme: theme-2
   include_children_in_nav: true
   children:
-    - title: Community
+    - title: About Clubs SA
+      url: "/about/about-clubs-sa/"
+    - title: Clubs SA Staff & Board
+      url: "/about/clubs-sa-staff-and-board/"
+    - title: Publications and Submissions
       url: "#"
-    - title: Testimonials
+    - title: Club Safe
       url: "#"
-    - title: Another Page Example
+    - title: Training
+      url: "#"
+    - title: Funding
+      url: "/about/funding/"
+      include_children_in_nav: true
+      children:
+        - title: Clubs SA/IGC Sponsorship Assistance Program
+          url: "#"
+        - title: Club One Small Grants
+          url: "#"
+        - title: Kokoda Youth Challenge 2014
+          url: "#"
+        - title: Recipients
+          url: "#"
+    - title: Find A Club
+      url: "/about/find-a-club/"
+    - title: Contact Us
       url: "#"
 
-- title: Our People
-  url: /our-people/
+- title: Membership
+  url: "/membership/"
+  theme: theme-3
   include_children_in_nav: true
   children:
-    - title: John Smith
-      url: /our-people/john-smith/
+    - title: Why Join
+      url: "#"
+    - title: Application/Enquiry Form
+      url: "#"
+    - title: Industry Links
+      url: "#"
+    - title: Directors Manual for Licensed Clubs
+      url: "#"
+    - title: Members
+      url: /membership/members/
       include_children_in_nav: false
       children:
-        - title: Social Media
-          url: /our-people/john-smith/social-media/
-        - title: Resume
-          url: /our-people/jogn-smith/social-media/
+        - title: WHS Induction
+          url: "#"
+        - title: Uploaded documents
+          url: "#"
+        - title: Handbook
+          url: "#"
+        - title: Newsletters
+          url: "#"
 
-    - title: John Smith
-      url: /our-people/john-smith/
-    - title: John Smith
-      url: /our-people/john-smith/
-    - title: John Smith
-      url: /our-people/john-smith/
-
-- title: Legal Services
-  url: /legal-services/
+- title: Partners
+  url: "/partners/"
+  theme: theme-4
   include_children_in_nav: true
   children:
-    - title: Business Law
-      url: /legal-services/family-law/
-      bg_color: primary-color
-      featured: true
+    - title: Why become a Partner
+      url: "#"
+    - title: Various Levels of Partnerships
+      url: "#"
+    - title: Partnership Brochure
+      url: "#"
+    - title: Current Partners
+      url: "#"
+    - title: Featured Partner
+      url: "#"
+    - title: Services/Benefits Directory
+      url: "#"
+    - title: Advertise with Clubs SA (media kit)
+      url: "#"
+    - title: Enquiry Form
+      url: "#"
 
-    - title: Employment & Workplace Relations
-      url: /legal-services/family-law/
-      bg_color: tertiary-color
-
-    - title: Commercial Litigation & Dispute Resolution
-      url: /legal-services/family-law/
-      bg_color: primary-color
-      featured: true
-
-    - title: Family Law
-      url: /legal-services/family-law/
-      bg_color: quaternary-color
-      featured: true
-
-    - title: Domestic Building Disputes
-      url: /legal-services/family-law/
-      bg_color: tertiary-color
-
-    - title: Wills & Estates
-      url: /legal-services/family-law/
-      bg_color: secondary-color
-      featured: true
-
-    - title: Property & Conveyancing
-      url: /legal-services/family-law/
-      bg_color: primary-color
-      featured: true
-
-    - title: Notary
-      url: /legal-services/family-law/
-      bg_color: tertiary-color
-      featured: true
-
-    - title: Intellectual Property Law
-      url: /legal-services/family-law/
-      bg_color: primary-color
-
-    - title: Leasing - Commercial & Retail
-      url: /legal-services/family-law/
-      bg_color: tertiary-color
-
-    - title: Mortgage Law
-      url: /legal-services/family-law/
-      bg_color: quaternary-color
-
-    - title: Superannuation
-      url: /legal-services/family-law/
-      bg_color: secondary-color
-
-- title: Blog/News
-  url: /news/
-  include_children_in_nav: false
+- title: News
+  url: "/news/"
+  theme: theme-5
+  include_children_in_nav: true
   children:
-    - title: Article Heading
-      url: /news/news-item/
+    - title: News List
+      url: "/news/news-item/"
+    - title: News Item
+      url: "/news/news-item/"
 
-- title: Resources
-  url: /resources/
-
-- title: Contact
-  url: /contact/
-
-##############################
-
-- title: Sitemap
-  url: /sitemap/
-  type: utility
-
-- title: Terms & Conditions
-  url: /terms-and-conditions/
-  type: utility
-
+- title: Events
+  url: "/events/"
+  theme: theme-6
+  include_children_in_nav: true
+  children:
+    - title: Awards of Excellence current year
+      url: "/events/events-item/"
+    - title: Club Managers Meeting
+      url: "/events/events-item/"
+      include_children_in_nav: true
+      children:
+        - title: Awards of Excellence current year
+          url: "/events/events-item/"
+    - title: Clubs SA Charity Bowls Day
+      url: "/events/events-item/"
+    - title: Regional Meetings
+      url: "/events/events-item/"
+    - title: AGM
+      url: "/events/events-item/"
+    - title: Clubs SA Sponsors Drinks
+      url: "/events/events-item/"
+    - title: Awards of Excellence last year
+      url: "/events/events-item/"

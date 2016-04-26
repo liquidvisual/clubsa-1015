@@ -1,56 +1,41 @@
-// Generated on 2016-03-16 using generator-jekyllrb 1.4.1
+// Generated on 2014-09-28 using generator-jekyllrb 1.2.1
 'use strict';
-
-//-----------------------------------------------------
-// Directory reference:
-//   css: css
-//   sass: _scss
-//   javascript: scripts
-//   images: img
-//   fonts: fonts
-//-----------------------------------------------------
 
 module.exports = function (grunt) {
 
   // Show elapsed time after tasks run
   require('time-grunt')(grunt);
 
-  //-----------------------------------------------------
-  // LOAD TASKS FASTER
+  // FASTER YOU BEAST, FASTER
   // https://medium.com/@lmartins/faster-grunt-workflow-ced193c2900b
-  //-----------------------------------------------------
-
   require('jit-grunt')(grunt, {
-
-    // Uncomment if plugins can't be resolved in automatic mapping
     buildcontrol: 'grunt-build-control',
     cdnify: 'grunt-cdnify',
-    sass_globbing: 'grunt-sass-globbing', // does this speed this up?
-    sass: 'grunt-sass',
+    sass: 'grunt-sass', // does this add speed? Who knows
     browsersync: 'grunt-browser-sync',
-    useminPrepare: 'grunt-usemin'
+    useminPrepare: 'grunt-usemin' // plugin can't be resolved in automatic mapping
   });
 
   grunt.initConfig({
     //-----------------------------------------------------
-    // Variables
+    // Configure Paths
     //-----------------------------------------------------
-
     yeoman: {
       app: 'src',
       dist: 'dist',
       assets: 'dist/assets',
       port: '9000',
-      git: 'https://github.com/liquidvisual/INSERT-HERE.git',
+      // git: 'git@github.com:liquidvisual/clubsa-1015.git',
+      git: 'https://github.com/liquidvisual/clubsa-1015.git',
+      // IMPORTANT: Set a baseurl on line 364
     },
-
     //-----------------------------------------------------
     // WATCH
     //-----------------------------------------------------
     watch: {
       sass: {
-        files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}', '<%= yeoman.app %>/builder-app/_scss/**/*.{scss,sass}'],
-        tasks: ['sass_globbing:dist', 'sass:server'] //'autoprefixer:dist' // remove globbing for speed
+        files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
+        tasks: ['sass:server']
       },
       autoprefixer: {
         files: ['<%= yeoman.app %>/css/**/*.css'],
@@ -74,7 +59,6 @@ module.exports = function (grunt) {
             '.jekyll/**/*.html',
             '{.tmp,<%= yeoman.app %>}/css/**/*.css',
             '{.tmp,<%= yeoman.app %>}/scripts/**/*.js',
-            '{.tmp,<%= yeoman.app %>}/builder-app/scripts/**/*.js',
             '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
           ]
         },
@@ -82,7 +66,7 @@ module.exports = function (grunt) {
           notify: false,
           // Here you can disable/enable each feature individually
           ghostMode: {
-              clicks: false,
+              clicks: true,
               forms: true,
               scroll: true
           },
@@ -90,7 +74,7 @@ module.exports = function (grunt) {
           codeSync: true,
           // Open the site in Chrome & Firefox
           // browser: ["google chrome", "firefox"]
-          port: '<%= yeoman.port %>',
+          port: 9292,
           host: '0.0.0.0',
           server: {
             baseDir: [
@@ -115,7 +99,6 @@ module.exports = function (grunt) {
             '.jekyll/**/*.html',
             '.tmp/css/**/*.css',
             '{.tmp,<%= yeoman.app %>}/scripts/**/*.js',
-            '{.tmp,<%= yeoman.app %>}/builder-app/scripts/**/*.js',
             '{<%= yeoman.app %>}/_bower_components/**/*.js',
             '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
           ]
@@ -154,30 +137,14 @@ module.exports = function (grunt) {
       ]
     },
     //-----------------------------------------------------
-    // SASS GLOBBING
-    //
-    // EG. @import "app/components/all.scss";
-    //-----------------------------------------------------
-    sass_globbing: {
-      dist: {
-        files: {
-          '<%= yeoman.app %>/_scss/app/components/_all.scss': '<%= yeoman.app %>/_scss/app/components/**/*.{scss,sass}',
-        },
-        options: {
-          useSingleQuotes: false
-        }
-      }
-    },
-    //-----------------------------------------------------
     // SASS
     //-----------------------------------------------------
     sass: {
       options: {
-        sourceMap: true,
         //imagePath: '',
-        includePaths: ['<%= yeoman.app %>/_bower_components/bootstrap/scss',
-                       '<%= yeoman.app %>/_bower_components/foundation/scss',
-                       '<%= yeoman.app %>/_bower_components/jQuery.mmenu/src/scss']
+        includePaths: ['<%= yeoman.app %>/_bower_components/foundation/scss',
+                       '<%= yeoman.app %>/_bower_components/jQuery.mmenu/src/scss',
+                       '<%= yeoman.app %>/_bower_components/bootstrap/scss']
       },
       dist: {
         files: [{
@@ -187,21 +154,11 @@ module.exports = function (grunt) {
           src: '**/*.{scss,sass}',
           dest: '.tmp/css',
           ext: '.css'
-        },
-        // LV BUILDER - comment out if not using
-        {
-          expand: true,
-          cwd: '<%= yeoman.app %>/builder-app/_scss',
-          src: '**/*.{scss,sass}',
-          dest: '.tmp/css',
-          ext: '.css'
         }]
       },
       server: {
         options: {
-          // debugInfo: true,
-          // lineNumbers: true,
-          // sourceComments: 'map',
+          //sourceMap: false,
           outputStyle: 'expanded'
         },
         files: [{
@@ -210,29 +167,7 @@ module.exports = function (grunt) {
           src: '**/*.{scss,sass}',
           dest: '.tmp/css',
           ext: '.css'
-        },
-        // LV BUILDER - comment out if not using
-        {
-          expand: true,
-          cwd: '<%= yeoman.app %>/builder-app/_scss',
-          src: '**/*.{scss,sass}',
-          dest: '.tmp/css',
-          ext: '.css'
         }]
-      }
-    },
-    //-----------------------------------------------------
-    // AUTOPREFIXER
-    //-----------------------------------------------------
-    autoprefixer: {
-      options: {
-        browsers: ['last 2 versions']
-      },
-      dist: {
-        expand: true,
-        cwd: '.tmp',
-        src: '**/{css,concat}/*.css',
-        dest: '.tmp'
       }
     },
     //-----------------------------------------------------
@@ -241,7 +176,7 @@ module.exports = function (grunt) {
     jekyll: {
       options: {
         bundleExec: true,
-        config: '_config.yml,_config.build.yml', // no spaces
+        config: '_config.yml,_config.build.yml',
         src: '<%= yeoman.app %>'
       },
       dist: {
@@ -375,7 +310,6 @@ module.exports = function (grunt) {
         files: [{
           src: [
             '<%= yeoman.assets %>/scripts/**/*.js',
-            '<%= yeoman.assets %>/builder-app/scripts/**/*.js',
             '<%= yeoman.assets %>/css/**/*.css',
             '<%= yeoman.assets %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
             '<%= yeoman.assets %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
@@ -425,7 +359,6 @@ module.exports = function (grunt) {
       all: [
         'Gruntfile.js',
         '<%= yeoman.app %>/scripts/**/*.js',
-        '<%= yeoman.app %>/builder-app/scripts/**/*.js',
         'test/spec/**/*.js'
       ]
     },
@@ -438,22 +371,13 @@ module.exports = function (grunt) {
       },
       check: {
         src: [
-          '<%= yeoman.app %>/css/**/*.css'
+          '<%= yeoman.app %>/css/**/*.css',
+          '<%= yeoman.app %>/_scss/**/*.scss'
         ]
       }
     },
     //-----------------------------------------------------
-    // SCSS LINT
-    //-----------------------------------------------------
-    // https://github.com/robwierzbowski/generator-jekyllrb/issues/106
-    // scsslint: {
-    //   // See https://www.npmjs.org/package/grunt-scss-lint for options.
-    //   allFiles: [
-    //     '<%= yeoman.app %>/_scss/**/*.scss'
-    //   ]
-    // },
-    //-----------------------------------------------------
-    // CDNIFY - Prepend paths to inline assets
+    // CDNIFY - Prepend paths to assets
     //-----------------------------------------------------
     cdnify: {
       dist: {
@@ -475,15 +399,24 @@ module.exports = function (grunt) {
       }
     },
     //-----------------------------------------------------
+    // IE8 REM Fallback
+    // This will create a NEW stylesheet. Won't work with
+    // file revving.
+    //-----------------------------------------------------
+    pixrem: {
+      options: {
+        rootvalue: '16px'
+      },
+      dist: {
+        src: '<%= yeoman.assets %>/css/*.css',
+        dest: '<%= yeoman.assets %>/css/minified-ie8.css'
+      }
+    },
+    //-----------------------------------------------------
     // CONCURRENT
-    //
-    // Globbing might be slightly risky, but it speeds the
-    // process up quite a bit in dev and always seems to
-    // complete before the others.
     //-----------------------------------------------------
     concurrent: {
       server: [
-        'sass_globbing:dist',
         'sass:server',
         'jekyll:server'
       ],
@@ -491,25 +424,10 @@ module.exports = function (grunt) {
         'sass:dist',
         'copy:dist'
       ]
-    },
-    //-----------------------------------------------------
-    // Launch DIST on build
-    //-----------------------------------------------------
-    shell: {
-      serveDist: {
-        command: ['cd <%= yeoman.dist %>',
-                  'open http://localhost:8000',
-                  'python -m SimpleHTTPServer 8000',
-                  'open http://localhost:8000',
-                  'cd -'
-        ].join('&&')
-       }
     }
-
-  //--
   });
   //-----------------------------------------------------
-  // GRUNT SERVE
+  // Define Tasks
   //-----------------------------------------------------
 
   grunt.registerTask('serve', function (target) {
@@ -519,9 +437,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      // 'sass_globbing:dist', // sets up globbing - safety - occurs again below (for browsersync)
       'concurrent:server',
-      // 'autoprefixer:dist', this will stop sass maps from working
       'browserSync:server',
       'watch'
     ]);
@@ -532,49 +448,49 @@ module.exports = function (grunt) {
     grunt.task.run(['serve']);
   });
 
+  // No real tests yet. Add your own.
+  grunt.registerTask('test', [
+  //   'clean:server',
+  //   'concurrent:test',
+  //   'connect:test'
+  ]);
+
   //=======================================
-  // GRUNT CHECK
+  // Check
   //=======================================
 
   grunt.registerTask('check', [
     'clean:server',
     'jekyll:check',
-    'sass_globbing:dist',
     'sass:server',
     'jshint:all',
-    'csslint:check',
-    // 'scsslint'
+    'csslint:check'
   ]);
 
   //=======================================
-  // GRUNT BUILD
+  // Build
   //=======================================
 
   grunt.registerTask('build', [
     'clean',
-    'jekyll:dist', // Jekyll cleans files from the target directory, so must run first
-    'sass_globbing:dist',
+    // Jekyll cleans files from the target directory, so must run first
+    'jekyll:dist',
     'concurrent:dist',
     'useminPrepare',
     'concat',
     'cssmin',
-    'autoprefixer:dist',
     'uglify',
     //'imagemin',
     //'svgmin',
     //'filerev',
     'usemin',
+    //'pixrem',
     'cdnify'
-    //'htmlmin' // best not to use this
-    // 'shell:server'
-    ]);
-
-  grunt.registerTask('host', [
-    'shell:serveDist'
+    //'htmlmin'
     ]);
 
   //=======================================
-  // GRUNT DEPLOY (GIT)
+  // Deploy (GIT)
   //=======================================
 
   grunt.registerTask('deploy', [

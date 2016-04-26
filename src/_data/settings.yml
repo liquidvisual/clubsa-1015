@@ -2,32 +2,28 @@
 # GLOBAL SITE SETTINGS
 # ---------------------
 
-cname: DOMAIN.yourwebvisual.com
+cname: clubssa.yourwebvisual.com
 
 # META
-title: "Your Website"
-seo_title: "liquidvisual Builder"
-company: "liquidvisual"
+title: "Clubs SA"
+seo_title: ""
+company: "Clubs SA"
 description: ""
 
 # CONTACT
-email: david@digitalmomentum.com.au
-phone: (05) 555 555
-fax: (05) 555 555
-abn: 13 168 867 927
+email: admin@clubssa.com.au
+phone: (08) 8290 2200
+fax: (08) 8290 2222
 
 # OFFICES
 offices:
-  - title: Melbourne
-    address: "Level 5<br> 55 Placeholder Avenue<br> Melbourne Victoria 3000"
-    phone: 05 5555 5555
-    fax: 05 5555 5555
-
-  - title: Sydney
-    address: "123"
+  - title: South Australia
+    address: "222a Henley Beach Rd<br> Torrensville, SA 5031"
+    phone: (08) 8290 2200
+    fax: (08) 8290 2222
 
 # SOCIAL MEDIA
-facebook: ""
+facebook: "https://www.facebook.com/CLUBSSA"
 linked_in: ""
 google_plus: ""
 
@@ -37,7 +33,15 @@ google_analytics: "UA-XXXXXXXX-X"
 
 # AUTHOR
 author:
-  - title: liquidvisual
-    url: http://www.liquidvisual.com
-    logo: /img/ui/liquidvisual-logo.svg
-    description: Website by liquidvisual
+  title: Much Media
+  url: http://www.muchmedia.com.au
+  logo: /img/template/much-media-logo.svg
+  description: Website by Much Media
+
+# BREAKPOINTS
+breakpoints:
+  xs : 0
+  sm : 544
+  md : 768
+  lg : 992
+  xl : 1350

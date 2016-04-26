@@ -1,68 +1,32 @@
 /*
     TYPE.CSS
 
-    - Last updated: 16.03.16
+    - Last updated: 27.10.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Responsive Typography
+// Headings
 //-----------------------------------------------------------------
 
-// html {
-// 	@include media-breakpoint-up(xs) { font-size: $font-size-xs; }
-// 	@include media-breakpoint-up(sm) { font-size: $font-size-sm; }
-// 	@include media-breakpoint-up(md) { font-size: $font-size-md; }
-// 	@include media-breakpoint-up(lg) { font-size: $font-size-lg; }
-// 	@include media-breakpoint-up(xl) { font-size: $font-size-xl; }
-// }
-//-----------------------------------------------------------------
-// Missing from Bootstrap
-//-----------------------------------------------------------------
-
-// p, ul, ol {
-// 	margin-bottom: rem-calc(24); // requested - should be in bootstrap
-// }
-
-//-----------------------------------------------------------------
-// Spacer
-//-----------------------------------------------------------------
-
-.spacer {
-	width: 1px;
-	height: 1px;
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.3;
 }
 
-//-----------------------------------------------------------------
-// Headers with ICONS inside
-//-----------------------------------------------------------------
-
-.header-icon {
-	display: table;
-
-	i,
-	.text {
-		display: table-cell;
-	}
-
-	i {
-		@include media-breakpoint-up(md) {
-		    font-size: rem-calc(28);
-		}
-	}
-
-	.text {
-		padding-left: rem-calc(10);
-	}
+.stage-header h1,
+.stage-header h2 {
+	border-bottom: 1px solid #DEDEDE;
+	padding-bottom: rem-calc(15);
+	margin-bottom: rem-calc(40);
 }
 
 //-----------------------------------------------------------------
 // Anchors
 //-----------------------------------------------------------------
 
-a:not(.logo),
+a,
 .btn {
 	@include transition();
 }
@@ -74,8 +38,13 @@ a:not(.logo),
 // }
 
 //-----------------------------------------------------------------
-//
+// Paragraphs
 //-----------------------------------------------------------------
+
+p, ul, ol {
+	margin-bottom: rem-calc(24); // requested - should be in bootstrap
+}
+
 //=========================================
 //
 //=========================================

@@ -5,21 +5,30 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
+                {% include components/contact_info.html %}
+            </div>
+            <div class="col-md-6 text-right hidden-sm-down">
+
+                {% if site.mode == 'build' %}
+                    {% include snippets/facebook_widget.html %}
+                {% endif %}
 
             </div>
         </div>
     </div>
 </section>
 
-<!-- Footer Bottom -->
+<!-- Footer Legal -->
 <section class="global-footer-bottom">
     <div class="container">
-
-        <a href="/docs/">Docs</a>
-        <a class="author-logo pull-sm-right" target="_blank" href="{{ settings.author.url }}">
-            <span class="text">{{ settings.author.description }}</span>
-            <img width="20" src="{{ settings.author.logo }}" alt="Created by {{ settings.author.title }}">
-        </a>
-
+    	<div class="row">
+    		<div class="col-xs-12 text-right">
+				<a class="pull-left" href="/docs/">Docs</a>
+			    <a class="author-logo" target="_blank" href="{{ settings.author.url }}">
+			        <span class="text">{{ settings.author.description }}</span>
+                    <img width="20" src="{{ settings.author.logo }}" alt="Created by {{ settings.author.title }}">
+			    </a>
+    		</div>
+    	</div>
     </div>
 </section>
