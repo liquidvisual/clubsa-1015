@@ -1,12 +1,12 @@
-clubsa-1015
+Instructions
 =============================
 
 ## To Run
 
-    git clone git@github.com:liquidvisual/clubsa-1015.git
+    git clone git@github.com:liquidvisual/NAME-OF-REPO-HERE.git
     bundle install
     npm install
     bower install
     grunt serve
 
-This repo is the result of running the [Jekyllrb Yeoman generator](https://github.com/robwierzbowski/generator-jekyllrb) with custom settings.
+This repo is a heavily modified version of [Jekyllrb Yeoman generator](https://github.com/robwierzbowski/generator-jekyllrb).

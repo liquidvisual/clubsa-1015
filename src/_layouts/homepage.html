@@ -3,47 +3,66 @@ layout: master
 ---
 
 {% assign settings = site.data.settings %}
-{% assign articles = site.data.articles %}
+{% assign featured = site.data.sitemap[3].children | where: "featured", true %}
 
-<!-- HERO -->
 {% include hero.html %}
+
+<br>
 
 <!-- STAGE -->
 <section class="stage">
-
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8 pad-right-xl">
+			{% for i in (1..2) %}
+				<div class="col-md-6">
+					<h2>H2. Header</h2>
+					<p class="lv-dropcap">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-				<!-- NEWS CARDS -->
-				<ul class="cards-collapse-xs block-grid-xs-1 block-grid-md-2 block-grid-xl-3">
-					{% for item in articles | limit: 6 %}
-						<li class="col-md-4 col-lg-4">
-							{% include components/card.html %}
-						</li>
-					{% endfor %}
-				</ul>
+					<ul class="triangle-list">
+						<li><a href="">test link</a></li>
+						<li><a href="">test link</a></li>
+						<li><a href="">test link</a></li>
+						<li><a href="">test link</a></li>
+						<li><a href="">test link</a></li>
+					</ul>
 
-				<div class="spacer m-b-md"></div>
-
-			</div>
-			<div class="col-lg-4">
-
-				<!-- EVENTS CARDS -->
-				{% for item in articles | limit: 3 %}
-					{% include components/card_slim.html %}
-				{% endfor %}
-
-				<div class="spacer m-b-md"></div>
-
-				<!-- COLORED CARDS -->
-				{% include components/color_cards.html %}
-			</div>
+					<ul class="">
+						<li><a href="">test link</a></li>
+						<li><a href="">test link</a></li>
+						<li><a href="">test link</a></li>
+						<li><a href="">test link</a></li>
+						<li><a href="">test link</a></li>
+					</ul>
+				</div>
+			{% endfor %}
 		</div>
+
+		<hr>
+
+		<ul class="post-list list-unstyled">
+		  {% for post in site.posts %}
+		    <li>
+		      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		      <h2>
+		        <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+		      </h2>
+		    </li>
+		  {% endfor %}
+		</ul>
+
+		<div class="spacer m-b-3"></div>
+
 	</div>
-
-	<div class="spacer m-b hidden-md-up"></div>
-
-	<!-- PARTNERS -->
-	{% include components/partners.html %}
 </section>
+
+<div class="jumbotron jumbotron-fluid m-b-0">
+  <div class="container">
+    <h1 class="display-3">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</div>

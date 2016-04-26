@@ -2,7 +2,7 @@
 /*
     MAIN.CSS
 
-    - Last updated: 27.10.15
+    - Last updated: 22.03.16
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -37,24 +37,10 @@
 @import "app/base/global";
 
 //=========================================
-// Components
+// Components (Globbed)
 //=========================================
 
-@import "app/components/accordion";
-@import "app/components/breadcrumbs";
-@import "app/components/buttons";
-@import "app/components/cards";
-@import "app/components/client-bar";
-@import "app/components/forms";
-@import "app/components/hero";
-@import "app/components/lists";
-@import "app/components/modal";
-@import "app/components/off-canvas";
-@import "app/components/sections";
-@import "app/components/side-nav";
-@import "app/components/social-media";
-@import "app/components/tabs";
-@import "app/components/type";
+@import "app/components/all";
 
 //=========================================
 // Layout
@@ -62,9 +48,9 @@
 
 @import "app/layout/footer";
 @import "app/layout/header";
+@import "app/layout/sidebar";
 @import "app/layout/stage";
 @import "app/layout/topbar";
-// @import "app/layout/navigation";
 
 //=========================================
 // Pages
@@ -85,8 +71,9 @@
 // Vendor
 //-----------------------------------------------------------------
 
+@import "/_bower_components/animate.css/animate.min.css";
 @import "../_bower_components/font-awesome/scss/font-awesome";
 // @import "../_bower_components/slick.js/slick/slick";
-@import "liquidvisual/vendor/magnific-popup/main";
+// @import "liquidvisual/vendor/magnific-popup/main";
 @import "liquidvisual/vendor/mmenu/main";
 @import "liquidvisual/vendor/nprogress";
