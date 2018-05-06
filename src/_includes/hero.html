@@ -1,7 +1,7 @@
 {% comment %}
     LIQUIDVISUAL-HERO
 
-    - updated: 04.15.18
+    - updated: 06.05.18
     - notes:
         * Multiple items in carousel_slides.yml triggers carousel mode
         * .has-auto-height - caption will detemine height
@@ -27,22 +27,20 @@
                         <div class="row">
                             <div class="col-md-7 col-xl-6">
 
-                                <a href="/about/about-clubs-sa/">
+                                <a href="{{ hero.url }}">
                                     <div class="lv-hero-item-caption animated fadeInLeft">
 
-                                        <!-- Mandatory -->
+                                        <!-- HEADER -->
                                         <h1>{{ hero.title }}</h1>
                                         <h2>{{ hero.subheader }}</h2>
 
-                                        <!-- Optional -->
+                                        <!-- BODY -->
                                         {% if hero.body %}
                                             <p>{{ hero.body }}</p>
                                         {% endif %}
 
-                                        <!-- If URL selected -->
-                                        {% if hero.url %}
-                                            <span class="btn" href="{{ hero.url }}"><i class="fa fa-angle-right"></i></span>
-                                        {% endif %}
+                                        <!-- ARROW -->
+                                        <span class="btn"><i class="fa fa-angle-right"></i></span>
 
                                     </div>
                                 </a>
@@ -62,17 +60,4 @@
         <span href="#" class="lv-hero-carousel-prev-btn"><i class="fa fa-angle-left"></i></span>
         <span href="#" class="lv-hero-carousel-next-btn"><i class="fa fa-angle-right"></i></span>
     </div>
-
-    {% comment %}
-    <!-- Carousel Bullets -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="lv-hero-carousel-bullets"></div>
-            </div>
-        </div>
-    </div>
-    {% endcomment %}
-
 </div>
-
