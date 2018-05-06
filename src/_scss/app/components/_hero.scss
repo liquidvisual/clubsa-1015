@@ -1,35 +1,64 @@
 /*
     HERO.CSS
 
-    - Last updated: 29.10.15
+    - Last updated: 06.05.18, 29.10.15
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
-// Variables
-//-----------------------------------------------------------------
-//-----------------------------------------------------------------
-// Hero
+// VARIABLES
 //-----------------------------------------------------------------
 
+$primary-color: #6aaef0;
+
 //-----------------------------------------------------------------
-// Hero Caption
+// HERO
+//-----------------------------------------------------------------
+
+.lv-hero-item-caption-wrapper {
+	background: $primary-color;
+
+	@include media-breakpoint-up(sm) {
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    background: none;
+	}
+}
+
+//-----------------------------------------------------------------
+// HERO CAPTION
 //-----------------------------------------------------------------
 
 .lv-hero-item-caption  {
-	width: 100%;
-	background: $primary-color;
+	display: block;
+	min-height: rem-calc(85);
+	padding: rem-calc(20 0);
 	color: white;
-	padding: rem-calc(30 50 30 30);
-	margin: rem-calc(170 0 30 0);
 
-	@include media-breakpoint-up(lg) {
-	    margin: rem-calc(0 0 70 0);
-	    padding: rem-calc(60 50 30 30);
+	@include media-breakpoint-up(sm) {
+	    padding: 1.275rem 3rem 1.275rem 1.275rem; // Jono override
+	    margin: rem-calc(170 0 30 0);
+	    background: $primary-color;
 	}
 
+	@include media-breakpoint-up(md) {
+	    margin: rem-calc(50 0);
+	}
+}
+
+//-----------------------------------------------------------------
+// HERO CAPTION COMPONENTS
+//-----------------------------------------------------------------
+
+.lv-hero-item-caption {
 	h1, h2, h3, h4, h5, h6 {
-		font-size: rem-calc(17);
+		font-size: rem-calc(16); // Jono override
 		color: white;
+
+		@include media-breakpoint-down(sm) {
+		    margin-bottom: 0.365rem; // Jono override
+		}
 
 		@include media-breakpoint-up(lg) {
 		    font-size: rem-calc(23);
@@ -37,16 +66,25 @@
 	}
 
 	p {
-		font-size: rem-calc(13);
 		margin-bottom: 0;
 	}
 
-	.btn {
+	.btn { // arrow button
 		position: absolute;
-		top: rem-calc(40);
-		right: rem-calc(5);
+		top: auto; // Jono override
+		right: 0;
+		bottom: -0.5rem; // Jono override
 		color: rgba(white, 0.5);
-		font-size: rem-calc(50);
+		font-size: 2.125rem; // Jono override
+
+		@include media-breakpoint-down(xs) {
+		    padding: rem-calc(15 0);
+		}
+
+		@include media-breakpoint-up(md) {
+			right: rem-calc(5);
+		    font-size: rem-calc(50);
+		}
 
 		&:after {
 			display: none; // override btn

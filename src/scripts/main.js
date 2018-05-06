@@ -1,5 +1,5 @@
 /*
-    MAIN.JS - Last updated: 27.10.15
+    MAIN.JS - Last updated: 04.05.18, 27.10.15
 */
 //-----------------------------------------------------------------
 // Variables
@@ -8,15 +8,12 @@
 // Document Ready
 //-----------------------------------------------------------------
 
-$(document).ready(function() {
+$(document).on('ready', function() {
     NProgress.start(); // Start preloader bar
-    $('input, textarea').placeholder(); // IE9 Patch
 });
 
-$(window).load(function() {
+$(window).on('load', function() {
     NProgress.done();
-
-    // H5F.setup(document.getElementById("form")); // Patch IE9 for form validation
 });
 
 //-----------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*
     HERO.CSS
 
-    - updated: 29.10.15
+    - updated: 04.05.18, 29.10.15
     - notes:
         * liquidvisual recommends bxSlider for hero carousels
 */
@@ -10,9 +10,9 @@
 //-----------------------------------------------------------------
 
 $hero-height-small:           auto; // IMPORTANT: if carousel slides, you need a fixed height
-$hero-height-medium:          rem-calc(570);
-$hero-height-medium-fixed:    rem-calc(300);
-$hero-height-large:           rem-calc(750); //rem-calc(570);
+$hero-height-medium:          auto; //rem-calc(570);
+$hero-height-medium-fixed:    auto; //rem-calc(300);
+$hero-height-large:           auto; //rem-calc(750); //rem-calc(570);
 $hero-carousel-bullet-size:   rem-calc(16);
 
 //-----------------------------------------------------------------
@@ -23,95 +23,6 @@ $hero-carousel-bullet-size:   rem-calc(16);
 
 .lv-hero-wrapper {
     position: relative;
-}
-
-//-----------------------------------------------------------------
-// Hero
-//
-// By design, mobile defaults to 'auto'
-//-----------------------------------------------------------------
-
-.lv-hero {
-    overflow: hidden;
-    height: $hero-height-small;
-
-    @include media-breakpoint-up(md) {
-        height: $hero-height-medium;
-    }
-
-    @include media-breakpoint-up(lg) {
-       height: $hero-height-large;
-    }
-
-    //=========================================
-    // Has Auto Height
-    //
-    // * Will override above at all sizes
-    // * Height determined by inner caption
-    //=========================================
-
-    &.has-auto-height {
-        height: auto;
-    }
-    //=========================================
-    // Has Fixed Height
-    //
-    // * Used on internal pages to set a height
-    //=========================================
-
-    &.has-fixed-height {
-        height: $hero-height-small;
-
-        @include media-breakpoint-up(md) {
-           height: $hero-height-medium-fixed;
-        }
-    }
-}
-
-//-----------------------------------------------------------------
-// Hero Item (Slides)
-//-----------------------------------------------------------------
-
-.lv-hero-item {
-    float: left;
-    width: 100%; // need
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    //=========================================
-    // For Positioning Captions
-    //=========================================
-
-    .lv-hero-item-table {
-        display: table;
-        width: 100%;
-        height: 100%;
-        position: relative;
-
-        .lv-hero-item-cell {
-            display: table-cell;
-
-            @include media-breakpoint-up(md) {
-                vertical-align: middle;
-            }
-        }
-    }
-}
-
-//-----------------------------------------------------------------
-// Hero - Caption
-//-----------------------------------------------------------------
-
-.lv-hero-item-caption {
-    display: inline-block; /* more flexibility */
-    width: 100%; /* mobile */
-    margin: rem-calc(50 0);
-
-    @include media-breakpoint-up(md) {
-        width: auto;
-    }
 }
 
 //-----------------------------------------------------------------

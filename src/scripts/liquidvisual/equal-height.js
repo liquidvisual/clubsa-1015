@@ -1,5 +1,5 @@
 /*
-	EQUAL-HEIGHT.JS - Last updated: 27.10.15
+	EQUAL-HEIGHT.JS - Last updated: 04.05.18, 27.10.15
 */
 //-----------------------------------------------------------------
 // EQUAL HEIGHT
@@ -60,11 +60,11 @@
     	}
     };
 
-    $(window).load(function() {
+    $(window).on('load', function() {
     	equalHeight(equalHeightElement);
     });
 
-    $(window).resize(function(){
+    $(window).on('resize', function(){
     	equalHeight(equalHeightElement);
     });
 

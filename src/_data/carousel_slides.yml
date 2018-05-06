@@ -1,14 +1,29 @@
-- title: "Far West Regional Meetings"
-  body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo."
+- title: Nominations Are Now Open!
+  body:
   url: /
-  image: "/img/content/hero-1.jpg"
+  image: /img/content/slider.png
 
-- title: "Seize the Day"
-  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum libero."
+- title: This Month's Featured Partner
+  body: Major Partner - City Holden
   url: /
-  image: "/img/content/hero-2.png"
+  image: /img/content/slider-template-holden-2.jpg
 
-- title: "Your Time is Now"
-  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in dictum"
+- title: Kokoda Winners Announced......
+  body:
   url: /
-  image: "/img/content/hero-3.png"
+  image: /img/content/kokoda-trail-wall.jpg
+
+- title: Clubs in South Australia
+  body: Supporting the Community
+  url: /
+  image: /img/content/clubs-i-10.jpg
+
+- title: Clubs SA and Healthy Kids Menu Initiative
+  body: Launched August 2017
+  url: /
+  image: /img/content/171034-hkm-clubs-sa-web-banner.jpg
+
+- title: Clubs in South Australia
+  body: Significant Contribution to Economy
+  url: /
+  image: /img/content/clubs-i-4.jpg
