@@ -1,122 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  
-  
-  <url>
-    <loc>/about/about-clubs-sa/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/about/clubs-sa-staff-and-board/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/events/events-item/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/about/find-a-club/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/about/funding/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/news/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/events/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/membership/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/partners/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/membership/members/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/news/news-item/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/membership/online-payments/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>/component-library/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>/docs/</loc>
-    <lastmod>2016-01-22T15:24:37+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  
+<url>
+<loc>/about/about-clubs-sa/</loc>
+</url>
+<url>
+<loc>/about/clubs-sa-staff-and-board/</loc>
+</url>
+<url>
+<loc>/events/events-item/</loc>
+</url>
+<url>
+<loc>/about/find-a-club/</loc>
+</url>
+<url>
+<loc>/about/funding/</loc>
+</url>
+<url>
+<loc>/partners/</loc>
+</url>
+<url>
+<loc>/events/</loc>
+</url>
+<url>
+<loc>/about/</loc>
+</url>
+<url>
+<loc>/news/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/membership/</loc>
+</url>
+<url>
+<loc>/membership/members/</loc>
+</url>
+<url>
+<loc>/news/news-item/</loc>
+</url>
+<url>
+<loc>/membership/online-payments/</loc>
+</url>
+<url>
+<loc>/component-library/</loc>
+</url>
+<url>
+<loc>/docs/</loc>
+</url>
 </urlset>
