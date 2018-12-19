@@ -1,5 +1,5 @@
 /*
-    HERO.JS - Last updated: 04.05.18, 20.10.15
+    HERO.JS - Last updated: 19.12.18, 04.05.18, 20.10.15
 */
 //-----------------------------------------------------------------
 // VARIABLES
@@ -12,7 +12,10 @@ var isTablet = $(window).width() < 1025; // no more touch
 //-----------------------------------------------------------------
 
 function launchCarousel() {
-    $('.lv-hero').bxSlider({
+    var $slider = $('.lv-hero');
+    var pause = Number($slider.attr('data-pause') || 2000); // default is 2 seconds
+
+    $slider.bxSlider({
         auto: true, //(isTablet ? false : true),
         mode: 'horizontal', // fade (much have fixed height or won't work)
         adaptiveHeight: true,
@@ -20,7 +23,7 @@ function launchCarousel() {
         touchEnabled: true,
         oneToOneTouch: false,
         speed: 1000,
-        pause: 4000,
+        pause: pause,
         slideMargin: 0,
         slideSelector: ".lv-hero-item",
         minSlides: 1,
