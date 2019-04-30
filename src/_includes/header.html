@@ -1,6 +1,5 @@
 {% assign settings = site.data.settings %}
 {% assign logo = "/img/content/logo.png" %}
-<!-- { % assign logo = "http://placehold.it/250x150" %} -->
 
 <div class="container">
     <div class="row">
@@ -19,9 +18,22 @@
                         <!-- <a href="#"><span class="hamburger"><span class="hamburger-icon"></span></span></a> -->
                     </div>
 
+                    <!-- Affiliate #1 -->
+                    <div class="hidden-lg-down header-middle">
+                        <img width="224" src="/img/content/clubs-australia-logo.png" alt="Affiliated with Clubs Australia">
+                    </div>
+
+                    <!-- Affiliate #2 -->
+                    <div class="hidden-lg-down header-right">
+                        <img width="146" src="/img/content/brand-sa-logo.png" alt="Brand South Australia">
+                    </div>
+
                 </div>
             </div>
-
         </div>
     </div>
+</div>
+
+<div class="hidden-lg-down">
+    {% include components/member_login.html %}
 </div>

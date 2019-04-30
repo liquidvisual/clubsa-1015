@@ -38,12 +38,12 @@ $primary-color: #6aaef0;
 
 	@include media-breakpoint-up(sm) {
 	    padding: 1.275rem 3rem 1.275rem 1.275rem; // Jono override
-	    margin: rem-calc(170 0 30 0);
+	    // margin: rem-calc(170 0 30 0);
 	    background: $primary-color;
 	}
 
 	@include media-breakpoint-up(md) {
-	    margin: rem-calc(50 0);
+	    margin: rem-calc(30 15);
 	}
 }
 
@@ -115,7 +115,7 @@ $primary-color: #6aaef0;
 		font-size: rem-calc(45);
 		background: rgba(0,0,0, 0.5);
 		border-radius: 100%;
-		margin: rem-calc(0 40); // revised
+		margin: rem-calc(0 30); // revised
 
 		@include media-breakpoint-down(sm) {
 		    width: 30px;

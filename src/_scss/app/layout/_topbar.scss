@@ -23,7 +23,7 @@ $dropdowns-have-anchor-borders : false !default;
 .global-navigation {
     position: absolute; // locked
     width: 100%;
-    top: $header-height-lg;
+    top: $header-height-xl;
     background: $primary-color;
     z-index: 9999;
     border-bottom: 10px solid #5D784B;
