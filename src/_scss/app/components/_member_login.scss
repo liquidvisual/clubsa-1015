@@ -1,30 +1,37 @@
 /*
     MEMBER_LOGIN.CSS
 
-    - Last updated: 30.04.19
+    - Last updated: 01.05.19
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
 // MEMBER LOGIN
 //-----------------------------------------------------------------
 
+.d-flex {
+	display: flex;
+}
+
 .member-login {
-	padding: rem-calc(20 10);
+	padding: rem-calc(20 0);
 	background-color: #1f425f;
 	font-size: rem-calc(15);
 	font-weight: bold;
 	color: white;
 	z-index: 10;
 
+	@include media-breakpoint-up(md) {
+	    padding: 0;
+	}
+
 	@include media-breakpoint-up(xl) {
 	    position: absolute;
 	    bottom: 0;
 	    width: 100%;
-	    padding: 0;
 	}
 
 	> .container {
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(md) {
 		    display: flex;
 		    align-items: center;
 		    justify-content: flex-end;
@@ -35,7 +42,7 @@
 	.text {
 		margin-bottom: rem-calc(15);
 
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(md) {
 		    margin: rem-calc(0 15 0 0);
 		}
 	}
@@ -46,20 +53,19 @@
 //-----------------------------------------------------------------
 
 .member-login-form {
-	@include media-breakpoint-up(xl) {
+	@include media-breakpoint-up(md) {
 	    display: flex;
 	    // align-items: center;
 	}
 
 	input {
-		width: 80%;
 		height: rem-calc(26);
 		margin: rem-calc(0 8 8 0);
 		border: 0;
 		font-size: rem-calc(11);
 		font-weight: 500;
 
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(md) {
 		    width: rem-calc(130);
 		    margin: rem-calc(0 8 0 0);
 		}
