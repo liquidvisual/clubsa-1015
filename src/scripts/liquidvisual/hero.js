@@ -20,7 +20,7 @@ function launchCarousel() {
         mode: 'horizontal', // fade (much have fixed height or won't work)
         adaptiveHeight: true,
         responsive: true,
-        touchEnabled: true,
+        touchEnabled: false, // https://github.com/stevenwanderski/bxslider-4/issues/1240
         oneToOneTouch: false,
         speed: 1000,
         pause: pause,
